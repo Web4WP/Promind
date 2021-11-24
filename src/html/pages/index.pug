@@ -1,0 +1,14 @@
+extends ../main/layout
+
+block variables
+  - let title = "Project Template"
+  - let bodyClass = ""
+  - let headerClass = "header"
+  - let footerClass = "footer"
+  - let swiperCSS = true
+  - let swiperJS = true
+
+block main
+  main
+    include ../includes/index/index-block
+    include ../blocks/bem-block

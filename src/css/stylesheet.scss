@@ -1,0 +1,24 @@
+@import "main/fonts";
+
+@import "lib/bootstrap/functions";
+@import "lib/bootstrap/variables";
+@import "lib/bootstrap/mixins";
+@import "lib/bootstrap/utilities";
+@import "lib/bootstrap/transitions";
+@import "lib/bootstrap/modal";
+
+/* Main */
+@import "mixins/media";
+@import "main/main";
+@import "main/header";
+@import "main/footer";
+
+/* Blocks */
+@import "blocks/breadcrumbs";
+@import "blocks/request";
+
+/* Index Page */
+@import "includes/index/index-block";
+
+/* Project Page (Vacancies) */
+@import "includes/project/project";

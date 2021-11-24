@@ -1,0 +1,24 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 41px;
+  font-size: 12px;
+}
+
+.breadcrumbs__item {
+  color: #131313;
+}
+
+.breadcrumbs__separator {
+  margin: 0 3px;
+  @include min-width-1280 {
+    margin: 0 4px;
+  }
+}
+
+.breadcrumbs__link {
+  color: #aaaaaa;
+  &:hover {
+    color: $blue;
+  }
+}

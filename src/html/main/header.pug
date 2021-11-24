@@ -1,0 +1,118 @@
+div.container
+  div.header__wrap
+    a.header__logo(href="index.html")
+      img.header__logo-img(src="img/svg/logo.svg", alt="ProMind")
+    button.header__burger
+      svg.header__burger-svg
+        use(xlink:href="img/svg/sprite.svg#burger")
+    nav.header__nav
+      ul.header__nav-list
+        li.header__nav-item
+          a.header__nav-link(href="#") Услуги
+        li.header__nav-item
+          a.header__nav-link(href="portfolio.html") Портфолио
+        li.header__nav-item
+          a.header__nav-link(href="design.html") Дизайн
+        li.header__nav-item
+          a.header__nav-link(href="about.html") О нас
+        li.header__nav-item
+          a.header__nav-link(href="contacts.html") Контакты
+    div.header__dropdown
+      div.container
+        div.header__dropdown-wrap
+          div.header__dropdown-left
+            div.header__dropdown-left-wrap
+              div.header__dropdown-left-title Услуги
+              div.header__dropdown-left-text Мы сотрудничаем как с компаниями, которые ориентированы на конечных потребителей, так и с промышленными гигантами сегмента В2В.
+            img.header__dropdown-img.header__dropdown-img_web-design(src="img/picture/web-design.png", alt="")
+            img.header__dropdown-img.header__dropdown-img_design(src="img/picture/design.png", alt="")
+            img.header__dropdown-img.header__dropdown-img_motion(src="img/picture/motion.png", alt="")
+            img.header__dropdown-img.header__dropdown-img_web(src="img/picture/web.png", alt="")
+            img.header__dropdown-img.header__dropdown-img_support(src="img/picture/support.png", alt="")
+            img.header__dropdown-img.header__dropdown-img_seo(src="img/picture/seo.png", alt="")
+            img.header__dropdown-img.header__dropdown-img_copy(src="img/picture/copy.png", alt="")
+          div.header__dropdown-right
+            div.header__dropdown-item.header__dropdown-item_web-design
+              a.header__dropdown-link(href="#") Веб-дизайн
+              div.header__dropdown-text Мы готовы создать дизайн сайта с нуля, сделать редизайн уже существующего ресурса и разработать адаптивные версии
+            div.header__dropdown-item.header__dropdown-item_design
+              a.header__dropdown-link(href="#") Графический дизайн
+              div.header__dropdown-text Графические элементы поддерживают положительный имидж компании, повышают узнаваемость образа
+            div.header__dropdown-item.header__dropdown-item_motion
+              a.header__dropdown-link(href="#") Motion дизайн
+              div.header__dropdown-text Видеоконтент – актуальный способ привлечь аудиторию и за ним будущее интернет-продвижения
+            div.header__dropdown-item.header__dropdown-item_web
+              a.header__dropdown-link(href="#") Web-разработка
+              div.header__dropdown-text Наши программисты профессионально подойдут к вопросу разработки и выпустят ресурс любого типа и уровня сложности
+            div.header__dropdown-item.header__dropdown-item_support
+              a.header__dropdown-link(href="#") Техническая поддержка
+              div.header__dropdown-text Наша студия готова включиться в работу над вашим проектом на любом этапе его «жизни»
+            div.header__dropdown-item.header__dropdown-item_seo
+              a.header__dropdown-link(href="#") Продвижение и маркетинг
+              div.header__dropdown-text Маркетинг и SEO-оптимизация – комплекс услуг, позволяющих улучшить видимость сайта и  его индексацию
+            div.header__dropdown-item.header__dropdown-item_copy
+              a.header__dropdown-link(href="#") Копирайтинг
+              div.header__dropdown-text Создадим текст, который будет стимулировать рост продаж на сайте или отражать товары и услуги вашей компании
+    button.header__btn.btn(data-bs-toggle="modal", data-bs-target="#request") Создать сайт
+    a.header__phone(href="tel:+74952552992") +7 (495) 255-29-92
+    button.header__lang
+      svg.header__lang-svg
+        use(xlink:href="img/svg/sprite.svg#lang")
+      span.header__lang-text En
+div.header__menu
+  div.container
+    div.header__menu-wrap
+      a.header__menu-logo(href="index.html")
+        img.header__menu-logo-img(src="img/svg/logo.svg", alt="ProMind")
+      button.header__menu-lang
+        svg.header__menu-lang-svg
+          use(xlink:href="img/svg/sprite.svg#lang")
+        span.header__menu-lang-span En
+    div.header__menu-block
+      div.header__menu-level
+        div.header__menu-title Меню
+        button.header__menu-close
+          svg.header__menu-close-svg
+            use(xlink:href="img/svg/sprite.svg#close")
+        nav.header__menu-nav
+          ul.header__menu-list
+            li.header__menu-item.header__menu-item_dropdown
+              a.header__menu-link(href="#") Услуги
+            li.header__menu-item
+              a.header__menu-link(href="#") Портфолио
+            li.header__menu-item
+              a.header__menu-link(href="#") Дизайн
+            li.header__menu-item
+              a.header__menu-link(href="#") О нас
+            li.header__menu-item
+              a.header__menu-link(href="#") Вакансии
+            li.header__menu-item
+              a.header__menu-link(href="#") Контакты
+      div.header__menu-level.header__menu-level_service
+        button.header__menu-back
+          svg.header__menu-back-svg
+            use(xlink:href="img/svg/sprite.svg#menu-back")
+        div.header__menu-title Услуги
+        button.header__menu-close
+          svg.header__menu-close-svg
+            use(xlink:href="img/svg/sprite.svg#close")
+        nav.header__menu-nav
+          ul.header__menu-list
+            li.header__menu-item
+              a.header__menu-link(href="#") Веб-дизайн
+            li.header__menu-item
+              a.header__menu-link(href="#") Графический дизайн
+            li.header__menu-item
+              a.header__menu-link(href="#") Motion дизайн
+            li.header__menu-item
+              a.header__menu-link(href="#") Web-разработка
+            li.header__menu-item
+              a.header__menu-link(href="#") Техническая поддержка
+            li.header__menu-item
+              a.header__menu-link(href="#") Продвижение и маркетинг
+            li.header__menu-item
+              a.header__menu-link(href="#") Вакансии
+      div.header__menu-contacts
+        a.header__menu-phone(href="tel:+74952552992") +7 (495) 255-29-92
+        a.header__menu-mail(href="mailto:contact@promind.studio") contact@promind.studio
+        button.header__menu-btn.btn(data-bs-toggle="modal", data-bs-target="#request") Создать сайт
