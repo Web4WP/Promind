@@ -1,0 +1,40 @@
+extends ../main/layout
+
+block variables
+  - let title = "Вакансии - ProMind"
+  - let bodyClass = "vacancy-page"
+  - let headerClass = "header"
+  - let footerClass = "footer"
+
+block main
+  main
+    div.container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная
+        li.breadcrumbs__separator /
+        li.breadcrumbs__item Вакансии
+    section.vacancy
+      div.vacancy__marquee
+        div.vacancy__marquee-wrap
+          span.vacancy__marquee-text Вакансии Vacancies La vacance
+          span.vacancy__marquee-text Вакансии Vacancies La vacance
+          span.vacancy__marquee-text Вакансии Vacancies La vacance
+      div.container
+        div.vacancy__wrap
+          div.vacancy__left
+            h1.vacancy__title Актуальные вакансии
+            ul.vacancy__list
+              li.vacancy__item
+                a.vacancy__link(href="dev.html") Веб разработчик
+              li.vacancy__item
+                a.vacancy__link(href="project.html") Проектный менеджер
+              li.vacancy__item
+                a.vacancy__link(href="dev.html") Копирайтер
+            button.vacancy__btn(data-bs-toggle="modal", data-bs-target="#request-vacancy") Откликнуться
+              svg.vacancy__btn-svg
+                use(xlink:href="img/svg/sprite.svg#button-arrow")
+          div.vacancy__right
+            div.vacancy__right-title Не нашли подходящую для Вас вакансию?
+            div.vacancy__right-text Напишите нам на почту
+            a.vacancy__right-mail(href="mailto:job@promind.studio") job@promind.studio
