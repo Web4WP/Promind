@@ -1,0 +1,74 @@
+extends ../main/layout
+
+block variables
+  - let title = "Web-разработчик - ProMind"
+  - let bodyClass = "dev-page"
+  - let headerClass = "header"
+  - let footerClass = "footer"
+
+block main
+  main
+    div.container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная
+        li.breadcrumbs__separator /
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Вакансии
+        li.breadcrumbs__separator /
+        li.breadcrumbs__item Web-разработчик
+    section.project
+      div.container
+        h1.project__title Web <span>разработчик</span>
+        img.project__img(src="img/picture/web-developer.png", alt="Development")
+        div.project__content
+          div.project__content-block
+            div.project__content-title Опыт работы:
+            div.project__content-text 3 - 6 лет
+          div.project__content-block
+            div.project__content-title Занятость:
+            div.project__content-text Полная занятость, в офис
+          div.project__content-block
+            div.project__content-title Необходимые навыки:
+            ul.project__content-list
+              li.project__content-item Поддержка и развитие действующего интернет-магазина (поддержка и доработка сайта, программное наполнение, выборка из базы данных по критериям, разработка внутренних сервисов сайта и т.д.);
+              li.project__content-item Управление интерактивными модулями на сайте, такими, как формы обратной связи, рассылки и т.п.;
+              li.project__content-item Решение оперативных задач по Битрикс 24 - внесение правок в типовые и нетиповые модули, размещение данных;
+              li.project__content-item Обеспечение бесперебойной работы сайта, решение проблем в случае их возникновения;
+              li.project__content-item Использование API третьих систем;
+              li.project__content-item Оптимизация кода, графики, скриптов;
+              li.project__content-item Обеспечение технической поддержки и безопасности сайта.
+          div.project__content-block
+            div.project__content-title Технические навыки:
+            ul.project__content-list
+              li.project__content-item Знание HTML, CSS, адаптивной верстки, Javascript и особенностей браузеров;
+              li.project__content-item Знание 1С-Bitrix (будет плюсом);
+              li.project__content-item Умение разбираться в «чужом» коде;
+              li.project__content-item Умение писать понятный и масштабируемый код;
+              li.project__content-item Способность самостоятельно решать вопросы и возникающие сложности;
+              li.project__content-item Опыт работы с интернет-магазинами;
+              li.project__content-item Наличие кейсов завершенных успешных проектов;
+              li.project__content-item Понимать задачу и самостоятельно находить пути ее реализации;
+              li.project__content-item Умение работать в режиме многозадачности, быстро ориентироваться.
+          div.project__content-block
+            div.project__content-title Будет преимуществом:
+            ul.project__content-list
+              li.project__content-item Знание Bitrix Framework;
+              li.project__content-item Знание JavaScript на базовом уровне;
+              li.project__content-item Опыт работы с системами контроля версий (Git), баг-трекерами;
+              li.project__content-item Опыт работы с Linux.
+          div.project__content-block
+            div.project__content-title Условия работы:
+            ul.project__content-list
+              li.project__content-item Высокая заработная плата с ежегодной компенсацией;
+              li.project__content-item Официальное трудоустройство по ТК РФ;
+              li.project__content-item Соцпакет;
+              li.project__content-item Прозрачная система профессионального, карьерного, финансового роста;
+              li.project__content-item Возможность реализовывать крупные, высоконагруженные web-проекты в большой команде;
+              li.project__content-item Офисы А класса в одних из лучших БЦ Магнитогорска (интересуют кандидаты в указанных городах, но рассматриваем и опытных кандидатов с условиями работы в удаленном доступе);
+              li.project__content-item Работа с использованием новейших программных продуктов и технологий;
+              li.project__content-item Дружная команда профессионалов в четырех офисах по стране.
+        div.project__content-center
+          button.project__btn(data-bs-toggle="modal", data-bs-target="#request-vacancy") Откликнуться
+            svg.project__btn-svg
+              use(xlink:href="img/svg/sprite.svg#button-arrow")

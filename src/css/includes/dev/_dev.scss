@@ -1,0 +1,16 @@
+.dev-page {
+  .breadcrumbs {
+    margin-bottom: 63px;
+    @include min-width-1280 {
+      margin-bottom: 83px;
+    }
+  }
+  .project__img {
+    max-width: 308px;
+    @include min-width-1280 {
+      max-width: 440px;
+      margin-top: -321px;
+      margin-right: 105px;
+    }
+  }
+}
