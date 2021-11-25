@@ -1,0 +1,133 @@
+.cta {
+  text-align: center;
+}
+
+.cta__title {
+  margin-bottom: 54px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 1.2;
+  @include min-width-1024 {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
+.cta__wrap {
+  padding: 16px 10px;
+  background: #fcfcfc;
+  border-radius: 45px;
+  .cta__form-send {
+    width: 146px;
+    margin-top: 5px;
+    padding: 11px 30px 12px;
+    @include min-width-1024 {
+      width: 200px;
+      margin-top: 0;
+      padding: 17px 30px;
+    }
+    @include min-width-1280 {
+      width: 260px;
+    }
+    @include min-width-custom(1440px) {
+      width: 304px;
+    }
+  }
+  @include min-width-1024 {
+    margin: 0 auto;
+    padding: 38px 30px;
+  }
+  @include min-width-1280 {
+    max-width: 1286px;
+    padding: 38px 57px;
+  }
+}
+
+.cta__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include min-width-1024 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.cta__form-item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 25px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+  &_name {
+    &::before {
+      content: url("../img/svg/cta-name.svg");
+    }
+  }
+  &_phone {
+    &::before {
+      content: url("../img/svg/cta-phone.svg");
+    }
+  }
+  &_email {
+    .cta__form-input {
+      padding: 11px 22px 10px 42px;
+      @include min-width-1024 {
+        padding: 16px 22px 17px 42px;
+      }
+    }
+    &::before {
+      content: url("../img/svg/cta-mail.svg");
+    }
+  }
+  @include min-width-1024 {
+    width: 230px;
+    margin-bottom: 0;
+  }
+  @include min-width-1280 {
+    width: 260px;
+  }
+  @include min-width-custom(1440px) {
+    width: 280px;
+  }
+}
+
+.cta__form-input {
+  padding: 11px 22px 10px 38px;
+  font-family: $Inter;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  border: 1px solid #e0e0e0;
+  border-radius: 40px;
+  &::placeholder {
+    color: #aaaaaa;
+  }
+  &:focus {
+    border-color: rgba(13, 110, 253, 1);
+  }
+  @include min-width-1024 {
+    padding: 16px 22px 17px 42px;
+  }
+  @include min-width-1280 {
+    font-size: 16px;
+  }
+}
+
+.cta__form-send {
+  width: 250px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+  }
+  @include min-width-1280 {
+    font-size: 18px;
+  }
+}

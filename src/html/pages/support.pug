@@ -1,0 +1,570 @@
+extends ../main/layout
+
+block variables
+  - let title = "Техническая поддержка - ProMind"
+  - let bodyClass = "support-page"
+  - let headerClass = "header"
+  - let footerClass = "footer"
+  - let swiperCSS = true
+  - let swiperJS = true
+
+block main
+  main
+    div.container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная
+        li.breadcrumbs__separator /
+        li.breadcrumbs__item Техническая поддержка
+    section.support
+      div.container
+        h1.support__title <span>Техническая</span> поддержка
+        div.support__description
+          p.support__text Техническая поддержка сайта нашими специалистами – это круглосуточная забота о вашем интернет-ресурсе, позволяющая поддерживать стабильную работу сайта, улучшить показатели эффективности и обеспечить бесперебойный доступ пользователей к нему. Услуги по сопровождению сайта включают профессиональную поддержку в сфере программных доработок, аналитике, функционала, дизайна и других направлений, необходимых для беспрерывной работоспособности сайта.
+          p.support__text Также услуга включает в себя покупку домена и настройку хостинга. Она включает несколько этапов: подбор подходящего хостинга, настройку на нем сайта и передачу всех прав действительному владельцу ресурса. Мы оперативно прийдем на помощь в случае сбоев в работе хостинга и профессионально устраним возникшие проблемы.
+        div.support__block.support__block_tech
+          div.support__block-wrap
+            div.support__block-left
+              h2.support__block-title Техническая поддержка сайта
+              ul.support__block-list
+                li.support__block-item Консультации по вопросам работы сайта
+                li.support__block-item Контроль за работоспособностью сайта
+                li.support__block-item Оперативное устранение ошибок и технических сбоев
+                li.support__block-item Резервное копирование сайта и базы данных
+                li.support__block-item Управление почтовым сервисом, помощь в настройке
+                li.support__block-item Проверка безопасности
+                li.support__block-item Контроль делегирования домена и оплаты хостинга
+                li.support__block-item Маленькие видеоуроки по работе сайта
+                li.support__block-item Контакт с хостинг-провайдером
+            div.support__block-right
+              div.support__header
+                div.support__header-title.support__header-title_basic Basic
+                div.support__header-title.support__header-title_business Business
+                div.support__header-title.support__header-title_pro Pro
+              div.support__block-row
+                div.support__block-point 11:00-18:00
+                div.support__block-point 11:00-18:00
+                div.support__block-point 10:00-20:00
+              div.support__block-row
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__block-row
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__block-row
+                div.support__block-point 1 раз в месяц
+                div.support__block-point 1 раз в 2 недели
+                div.support__block-point 1 раз в неделю
+              div.support__block-row
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__block-row
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-off")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__block-row
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__block-row
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-off")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__block-row
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+        div.support__block.support__block_info
+          div.support__block-wrap
+            div.support__block-left
+              h2.support__block-title Информационная поддержка сайта
+              ul.support__block-list
+                li.support__block-item Верстка и размещение текстовой информации
+                li.support__block-item Размещение и оптимизация графических изображений
+                li.support__block-item Изменение функциональных возможностей сайта
+                li.support__block-item Добавление и изменение разделов сайта
+                li.support__block-item Изменение графических элементов дизайна сайта
+                li.support__block-item Изменение медиа элементов дизайна сайта
+                li.support__block-item Разработка и размещение баннеров
+            div.support__block-right
+              div.support__block-row
+                div.support__block-point до 2 страниц
+                div.support__block-point до 5 страниц
+                div.support__block-point
+                  svg.support__block-point-svg.support__block-point-svg_infinity
+                    use(xlink:href="img/svg/sprite.svg#support-infinity")
+              div.support__block-row
+                div.support__block-point до 20 штук
+                div.support__block-point до 40 штук
+                div.support__block-point
+                  svg.support__block-point-svg.support__block-point-svg_infinity
+                    use(xlink:href="img/svg/sprite.svg#support-infinity")
+              div.support__block-row
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-off")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-off")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__block-row
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__block-row
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-off")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-off")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__block-row
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-off")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-off")
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__block-row
+                div.support__block-point
+                  svg.support__block-point-svg
+                    use(xlink:href="img/svg/sprite.svg#support-off")
+                div.support__block-point JPG, PNG, GIF
+                div.support__block-point + MP4, OGG, WEBM
+        div.support__block.support__block_service
+          div.support__block-wrap
+            div.support__block-left
+              h2.support__block-title Уровень сервиса
+              ul.support__block-list
+                li.support__block-item Количество нормо-часов в месяц
+                li.support__block-item Время реакции на обращение
+            div.support__block-right
+              div.support__block-row
+                div.support__block-point до 12 часов
+                div.support__block-point до 24 часов
+                div.support__block-point до 58 часов
+              div.support__block-row
+                div.support__block-point до 3 дней
+                div.support__block-point до 24 часов
+                div.support__block-point 5 часов
+              div.support__block-row.support__block-row_btns
+                button.support__block-btn.support__block-btn_basic(data-bs-toggle="modal", data-bs-target="#request") Подробнее
+                  svg.support__block-btn-svg
+                    use(xlink:href="img/svg/sprite.svg#button-arrow")
+                button.support__block-btn.support__block-btn_business(data-bs-toggle="modal", data-bs-target="#request") Подробнее
+                  svg.support__block-btn-svg
+                    use(xlink:href="img/svg/sprite.svg#button-arrow")
+                button.support__block-btn.support__block-btn_pro(data-bs-toggle="modal", data-bs-target="#request") Подробнее
+                  svg.support__block-btn-svg
+                    use(xlink:href="img/svg/sprite.svg#button-arrow")
+        div.support__tab
+          ul#pills-tab.support__nav.nav.nav-pills(role="tablist")
+            li.support__nav-item.nav-item(role="presentation")
+              button#pills-home-tab.support__nav-btn.nav-link.active(data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true") Business
+            li.support__nav-item.nav-item(role="presentation")
+              button#pills-profile-tab.support__nav-btn.nav-link(data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false") Basic
+            li.support__nav-item.nav-item(role="presentation")
+              button#pills-contact-tab.support__nav-btn.nav-link(data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false") Pro
+      div#pills-tabContent.support__content.tab-content
+        div#pills-home.support__pane.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="pills-home-tab")
+          div.support__pane-block.support__pane-block_basic.swiper
+            div.support__pane-wrap.swiper-wrapper
+              div.support__slide.swiper-slide
+                div.support__wrapper
+                  button.support__slide-next
+                    svg.support__slide-next-svg
+                      use(xlink:href="img/svg/sprite.svg#button-arrow")
+                  div.support__slide-header
+                    div.support__slide-header-title Техническая поддержка сайта
+                    div.support__slide-header-subtitle.support__slide-header-subtitle_basic Информационная поддержка
+                  div.support__slide-point
+                    div.support__slide-point-text Консультации по вопросам работы сайта
+                    div.support__slide-point-check 11:00-18:00
+                  div.support__slide-point
+                    div.support__slide-point-text Контроль за работоспособностью сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Оперативное устранение ошибок и технических сбоев
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Резервное копирование сайта и базы данных
+                    div.support__slide-point-check 1 р. в 2 недели
+                  div.support__slide-point
+                    div.support__slide-point-text Управление почтовым сервисом, помощь в настройке
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Проверка безопасности
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Контроль делегирования домена и оплаты хостинга
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Маленькие видеоуроки по работе сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Контакт с хостинг-провайдером
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__slide.swiper-slide
+                div.support__wrapper
+                  button.support__slide-next
+                    svg.support__slide-next-svg
+                      use(xlink:href="img/svg/sprite.svg#button-arrow")
+                  div.support__slide-header
+                    div.support__slide-header-title Информационная поддержка сайта
+                    div.support__slide-header-subtitle.support__slide-header-subtitle_businnes Уровень сервиса
+                  div.support__slide-point
+                    div.support__slide-point-text Верстка и размещение текстовой информации
+                    div.support__slide-point-check до 2 страниц
+                  div.support__slide-point
+                    div.support__slide-point-text Размещение и оптимизация графических изображений
+                    div.support__slide-point-check до 20 штук
+                  div.support__slide-point
+                    div.support__slide-point-text Изменение функциональных возможностей сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Добавление и изменение разделов сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Изменение графических элементов дизайна сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Изменение медиа элементов дизайна сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Разработка и размещение баннеров
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Изменение медиа элементов дизайна сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Разработка и размещение баннеров
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+              div.support__slide.swiper-slide
+                div.support__wrapper
+                  div.support__slide-header
+                    div.support__slide-header-title Уровень сервиса
+                  div.support__slide-point
+                    div.support__slide-point-text Количество нормо-часов в месяц
+                    div.support__slide-point-check до 12 часов
+                  div.support__slide-point
+                    div.support__slide-point-text Время реакции на обращение
+                    div.support__slide-point-check до 3 дней
+        div#pills-profile.support__pane-block.support__pane-block_businnes.tab-pane.fade(role="tabpanel" aria-labelledby="pills-profile-tab")
+          div.support__pane-block.support__pane-block_businnes.swiper
+            div.support__pane-wrap.swiper-wrapper
+              div.support__slide.swiper-slide
+                div.support__wrapper
+                  button.support__slide-next
+                    svg.support__slide-next-svg
+                      use(xlink:href="img/svg/sprite.svg#button-arrow")
+                  div.support__slide-header
+                    div.support__slide-header-title Техническая поддержка сайта
+                    div.support__slide-header-subtitle.support__slide-header-subtitle_pro Информационная поддержка
+                  div.support__slide-point
+                    div.support__slide-point-text Консультации по вопросам работы сайта
+                    div.support__slide-point-check 11:00-18:00
+                  div.support__slide-point
+                    div.support__slide-point-text Контроль за работоспособностью сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Оперативное устранение ошибок и технических сбоев
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Резервное копирование сайта и базы данных
+                    div.support__slide-point-check 1 р. в 2 недели
+                  div.support__slide-point
+                    div.support__slide-point-text Управление почтовым сервисом, помощь в настройке
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Проверка безопасности
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Контроль делегирования домена и оплаты хостинга
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Маленькие видеоуроки по работе сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Контакт с хостинг-провайдером
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__slide.swiper-slide
+                div.support__wrapper
+                  button.support__slide-next
+                    svg.support__slide-next-svg
+                      use(xlink:href="img/svg/sprite.svg#button-arrow")
+                  div.support__slide-header
+                    div.support__slide-header-title Информационная поддержка сайта
+                    div.support__slide-header-subtitle Уровень сервиса
+                  div.support__slide-point
+                    div.support__slide-point-text Верстка и размещение текстовой информации
+                    div.support__slide-point-check до 5 страниц
+                  div.support__slide-point
+                    div.support__slide-point-text Размещение и оптимизация графических изображений
+                    div.support__slide-point-check до 40 штук
+                  div.support__slide-point
+                    div.support__slide-point-text Изменение функциональных возможностей сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Добавление и изменение разделов сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Изменение графических элементов дизайна сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Изменение медиа элементов дизайна сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Разработка и размещение баннеров
+                    div.support__slide-point-check JPG, PNG, GIF
+                  div.support__slide-point
+                    div.support__slide-point-text Изменение медиа элементов дизайна сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Разработка и размещение баннеров
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+              div.support__slide.swiper-slide
+                div.support__wrapper
+                  div.support__slide-header
+                    div.support__slide-header-title Уровень сервиса
+                  div.support__slide-point
+                    div.support__slide-point-text Количество нормо-часов в месяц
+                    div.support__slide-point-check до 12 часов
+                  div.support__slide-point
+                    div.support__slide-point-text Время реакции на обращение
+                    div.support__slide-point-check до 3 дней
+        div#pills-contact.support__pane-block.support__pane-block_pro.tab-pane.fade(role="tabpanel" aria-labelledby="pills-contact-tab")
+          div.support__pane-wrap.swiper-wrapper
+              div.support__slide.swiper-slide
+                div.support__wrapper
+                  button.support__slide-next
+                    svg.support__slide-next-svg
+                      use(xlink:href="img/svg/sprite.svg#button-arrow")
+                  div.support__slide-header
+                    div.support__slide-header-title Техническая поддержка сайта
+                    div.support__slide-header-subtitle Информационная поддержка
+                  div.support__slide-point
+                    div.support__slide-point-text Консультации по вопросам работы сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg.support__slide-point-svg_infinity
+                        use(xlink:href="img/svg/sprite.svg#support-infinity")
+                  div.support__slide-point
+                    div.support__slide-point-text Контроль за работоспособностью сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg.support__slide-point-svg_infinity
+                        use(xlink:href="img/svg/sprite.svg#support-infinity")
+                  div.support__slide-point
+                    div.support__slide-point-text Оперативное устранение ошибок и технических сбоев
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Резервное копирование сайта и базы данных
+                    div.support__slide-point-check 1 р. в 2 недели
+                  div.support__slide-point
+                    div.support__slide-point-text Управление почтовым сервисом, помощь в настройке
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Проверка безопасности
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Контроль делегирования домена и оплаты хостинга
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Маленькие видеоуроки по работе сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Контакт с хостинг-провайдером
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+              div.support__slide.swiper-slide
+                div.support__wrapper
+                  button.support__slide-next
+                    svg.support__slide-next-svg
+                      use(xlink:href="img/svg/sprite.svg#button-arrow")
+                  div.support__slide-header
+                    div.support__slide-header-title Информационная поддержка сайта
+                    div.support__slide-header-subtitle Уровень сервиса
+                  div.support__slide-point
+                    div.support__slide-point-text Верстка и размещение текстовой информации
+                    div.support__slide-point-check до 5 страниц
+                  div.support__slide-point
+                    div.support__slide-point-text Размещение и оптимизация графических изображений
+                    div.support__slide-point-check до 40 штук
+                  div.support__slide-point
+                    div.support__slide-point-text Изменение функциональных возможностей сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Добавление и изменение разделов сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-on")
+                  div.support__slide-point
+                    div.support__slide-point-text Изменение графических элементов дизайна сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Изменение медиа элементов дизайна сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Разработка и размещение баннеров
+                    div.support__slide-point-check JPG, PNG, GIF
+                  div.support__slide-point
+                    div.support__slide-point-text Изменение медиа элементов дизайна сайта
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+                  div.support__slide-point
+                    div.support__slide-point-text Разработка и размещение баннеров
+                    div.support__slide-point-check
+                      svg.support__slide-point-svg
+                        use(xlink:href="img/svg/sprite.svg#support-off")
+              div.support__slide.swiper-slide
+                div.support__wrapper
+                  div.support__slide-header
+                    div.support__slide-header-title Уровень сервиса
+                  div.support__slide-point
+                    div.support__slide-point-text Количество нормо-часов в месяц
+                    div.support__slide-point-check до 12 часов
+                  div.support__slide-point
+                    div.support__slide-point-text Время реакции на обращение
+                    div.support__slide-point-check до 3 дней
+      div.container.center
+        div.support__nav-pagination.support__nav-pagination_basic.show
+        div.support__nav-pagination.support__nav-pagination_businnes
+        div.support__nav-pagination.support__nav-pagination_pro
+        button.support__more(data-bs-toggle="modal", data-bs-target="#request") Узнать подробнее
+          svg.support__more-svg
+            use(xlink:href="img/svg/sprite.svg#button-arrow")
+    include ../blocks/cta
+    div.support-marquee
+      div.support-marquee-wrap
+        span.support-marquee__text Hello! I wanna be COOL! Hello! I wanna be COOL!
+        span.support-marquee__text Hello! I wanna be COOL! Hello! I wanna be COOL!
+        span.support-marquee__text Hello! I wanna be COOL! Hello! I wanna be COOL!

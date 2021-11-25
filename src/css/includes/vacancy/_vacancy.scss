@@ -28,7 +28,7 @@
   width: fit-content;
   display: flex;
   position: relative;
-  transform: translateX(calc(-25% + 20vw), 0, 0);
+  transform: translateX(calc(-25% + 20vw));
   animation: marquee 20s linear infinite;
 }
 
@@ -185,11 +185,12 @@
 }
 
 @keyframes marquee {
+
   0% {
     transform: translate3d(calc(-25% + 20vw), 0, 0);
   }
-
   100% {
     transform: translate3d(calc(-50% + 20vw), 0, 0);
   }
+
 }

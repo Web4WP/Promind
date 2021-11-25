@@ -1,0 +1,12 @@
+section.cta
+  div.container
+    h2.cta__title Оставьте вашу заявку прямо сейчас!
+    div.cta__wrap
+      form.cta__form(method="post", action="/")
+        div.cta__form-item.cta__form-item_name
+          input#userNameCta.cta__form-input(type="text", placeholder="Ваше имя")
+        div.cta__form-item.cta__form-item_phone
+          input#userPhoneCta.cta__form-input(type="tel", placeholder="+7 (___) ___-__-__")
+        div.cta__form-item.cta__form-item_email
+          input#userEmailCta.cta__form-input(type="email", placeholder="Ваш е-mail")
+        input.cta__form-send.btn(type="submit", value="Отправить")
