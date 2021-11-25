@@ -1,0 +1,23 @@
+extends ../main/layout
+
+block variables
+  - let title = "Контакты - ProMind"
+  - let bodyClass = "contacts-page"
+  - let headerClass = "header"
+  - let footerClass = "footer"
+
+block main
+  main
+    div.container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная
+        li.breadcrumbs__separator /
+        li.breadcrumbs__item Контакты
+    div.contacts
+      div.contacts__marquee
+        div.contacts__marquee-wrap
+          span.contacts__marquee-text Привет   Hello   Bonjour   Привет   Hello   Bonjour
+          span.contacts__marquee-text Привет   Hello   Bonjour   Привет   Hello   Bonjour
+          span.contacts__marquee-text Привет   Hello   Bonjour   Привет   Hello   Bonjour
+      include ../blocks/cta

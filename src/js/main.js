@@ -130,84 +130,80 @@ document.addEventListener('DOMContentLoaded', function () {
   let imcta = new Inputmask("+7 (999) 999-99-99");
   imcta.mask(ctaForm);
 
-  // Слайдер тарифов на странице "Техническая поддержка" (Мобильная версия)
-  new Swiper('.support__pane-block_basic', {
-    loop: true,
-    spaceBetween: 30,
-    autoHeight: true,
-    pagination: {
-      el: ".support__nav-pagination_basic",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + "</span>";
-      },
-    },
-    navigation: {
-      nextEl: ".support__slide-header-subtitle"
-    }
-  });
-
-  new Swiper('.support__pane-block_businnes', {
-    loop: true,
-    spaceBetween: 30,
-    autoHeight: true,
-    pagination: {
-      el: ".support__nav-pagination_businnes",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + "</span>";
-      },
-    },
-    navigation: {
-      nextEl: ".support__slide-header-subtitle"
-    }
-  });
-
-  new Swiper('.support__pane-block_pro', {
-    loop: true,
-    spaceBetween: 30,
-    autoHeight: true,
-    pagination: {
-      el: ".support__nav-pagination_pro",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + "</span>";
-      },
-    },
-    navigation: {
-      nextEl: ".support__slide-header-subtitle"
-    }
-  });
-
-  document.querySelector('#pills-profile-tab').addEventListener('click', function (e) {
-    document.querySelector('.support__nav-pagination_basic').classList.remove('show');
-    document.querySelector('.support__nav-pagination_pro').classList.remove('show');
-    document.querySelector('.support__nav-pagination_businnes').classList.add('show');
-  })
-
-  document.querySelector('#pills-contact-tab').addEventListener('click', function (e) {
-    document.querySelector('.support__nav-pagination_basic').classList.remove('show');
-    document.querySelector('.support__nav-pagination_businnes').classList.remove('show');
-    document.querySelector('.support__nav-pagination_pro').classList.add('show');
-  })
-
-  document.querySelector('#pills-home-tab').addEventListener('click', function (e) {
-    document.querySelector('.support__nav-pagination_pro').classList.remove('show');
-    document.querySelector('.support__nav-pagination_businnes').classList.remove('show');
-    document.querySelector('.support__nav-pagination_basic').classList.add('show');
-  })
-
-
-
 
   if (window.location.pathname == '/index.html') {
 
 
 
   }
-  else if (window.location.pathname == '/page-name.html') {
+  else if (window.location.pathname == '/support.html') {
 
+    // Слайдер тарифов на странице "Техническая поддержка" (Мобильная версия)
+    new Swiper('.support__pane-block_basic', {
+      loop: true,
+      spaceBetween: 30,
+      autoHeight: true,
+      pagination: {
+        el: ".support__nav-pagination_basic",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + "</span>";
+        },
+      },
+      navigation: {
+        nextEl: ".support__slide-header-subtitle"
+      }
+    });
 
+    new Swiper('.support__pane-block_businnes', {
+      loop: true,
+      spaceBetween: 30,
+      autoHeight: true,
+      pagination: {
+        el: ".support__nav-pagination_businnes",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + "</span>";
+        },
+      },
+      navigation: {
+        nextEl: ".support__slide-header-subtitle"
+      }
+    });
+
+    new Swiper('.support__pane-block_pro', {
+      loop: true,
+      spaceBetween: 30,
+      autoHeight: true,
+      pagination: {
+        el: ".support__nav-pagination_pro",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + "</span>";
+        },
+      },
+      navigation: {
+        nextEl: ".support__slide-header-subtitle"
+      }
+    });
+
+    document.querySelector('#pills-profile-tab').addEventListener('click', function (e) {
+      document.querySelector('.support__nav-pagination_basic').classList.remove('show');
+      document.querySelector('.support__nav-pagination_pro').classList.remove('show');
+      document.querySelector('.support__nav-pagination_businnes').classList.add('show');
+    })
+
+    document.querySelector('#pills-contact-tab').addEventListener('click', function (e) {
+      document.querySelector('.support__nav-pagination_basic').classList.remove('show');
+      document.querySelector('.support__nav-pagination_businnes').classList.remove('show');
+      document.querySelector('.support__nav-pagination_pro').classList.add('show');
+    })
+
+    document.querySelector('#pills-home-tab').addEventListener('click', function (e) {
+      document.querySelector('.support__nav-pagination_pro').classList.remove('show');
+      document.querySelector('.support__nav-pagination_businnes').classList.remove('show');
+      document.querySelector('.support__nav-pagination_basic').classList.add('show');
+    })
 
   }
   else {
