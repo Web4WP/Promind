@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
   imcta.mask(ctaForm);
 
 
-  if (window.location.pathname == '/') {
+  if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
 
     // Эффект печатающегося текста на главной странице (typed.min.js)
     new Typed('.hero__text', {
@@ -168,6 +168,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   }
+
+  else if (window.location.pathname == '/portfolio.html') {
+
+    let mixer = mixitup('.portfolio__wrap');
+
+  }
+
   else if (window.location.pathname == '/support.html') {
 
     // Слайдер тарифов на странице "Техническая поддержка" (Мобильная версия)

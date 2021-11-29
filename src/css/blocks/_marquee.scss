@@ -10,6 +10,14 @@
     margin-top: 77px;
     margin-bottom: 80px;
   }
+  &_portfolio {
+    margin-top: 77px;
+    margin-bottom: 80px;
+    @include min-width-1280 {
+      margin-top: 120px;
+      margin-bottom: 118px;
+    }
+  }
 }
 
 .marquee__wrap {

@@ -133,6 +133,26 @@ img {
   text-align: center;
 }
 
+.page-title {
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  text-align: center;
+  @include min-width-custom(375px) {
+    font-size: 50px;
+  }
+  @include min-width-768 {
+    font-size: 60px;
+  }
+  @include min-width-1024 {
+    font-size: 70px;
+  }
+  @include min-width-1280 {
+    font-size: 115px;
+  }
+}
+
 @media (min-width: 3800px) {
 
   .container {
