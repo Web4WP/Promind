@@ -131,8 +131,40 @@ document.addEventListener('DOMContentLoaded', function () {
   imcta.mask(ctaForm);
 
 
-  if (window.location.pathname == '/index.html') {
+  if (window.location.pathname == '/') {
 
+    // Эффект печатающегося текста на главной странице (typed.min.js)
+    new Typed('.hero__text', {
+      stringsElement: '.hero__text-strings',
+      typeSpeed: 50,
+      backSpeed: 20,
+      backDelay: 2000,
+      showCursor: false,
+      fadeOut: true,
+      loop: true,
+    });
+
+    /* Анимация Marquee для партнеров */
+    let wrapper = document.querySelector('.hero__partners');
+    let marquee = document.querySelector('.hero__partners-wrap');
+    let wrapperWidth = wrapper.offsetWidth;
+    let marqueeWidth = marquee.scrollWidth;
+
+    function move() {
+      let currentTX = getComputedStyle(marquee).transform.split(',');
+      if( currentTX[4] === undefined ) {
+        currentTX = -1;
+      } else {
+        currentTX = parseFloat(currentTX[4]) - 1;
+      }
+      if(-currentTX >= marqueeWidth) {
+        marquee.style.transform = 'translateX(' + wrapperWidth + 'px)';
+       } else {
+        marquee.style.transform = 'translateX(' + currentTX + 'px)';
+      }
+    }
+
+    setInterval(move, 20);
 
 
   }
@@ -206,9 +238,25 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
   }
-  else {
+  else if (window.location.pathname == '/design.html') {
 
-
+    new Swiper('.design__slider', {
+      loop: true,
+      /*autoplay: {
+        delay: 3000,
+      },*/
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      pagination: {
+        el: ".design__slider-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + "</span>";
+        },
+      },
+    });
 
   }
 

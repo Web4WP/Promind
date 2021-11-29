@@ -101,14 +101,17 @@ img {
 }
 
 .container {
-  max-width: 1300px;
-  padding: 0 70px;
+  max-width: 100%;
+  padding: 0 20px;
   margin: 0 auto;
-  @include max-width-custom(1900px) {
+  @include min-width-768 {
     padding: 0 50px;
   }
-  @include max-width-1279 {
-    padding: 0 20px;
+  @include min-width-custom(1440px) {
+    padding: 0 70px;
+  }
+  @include min-width-custom(1600px) {
+    padding: 0 150px;
   }
 }
 
@@ -130,10 +133,10 @@ img {
   text-align: center;
 }
 
-@media (min-width: 2500px) {
+@media (min-width: 3800px) {
 
   .container {
-    max-width: 1400px;
+    max-width: 2500px;
   }
 
 }

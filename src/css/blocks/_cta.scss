@@ -1,9 +1,18 @@
 .cta {
   text-align: center;
+  .container {
+    padding: 0 10px;
+    @include min-width-768 {
+      padding: 0 50px;
+    }
+    @include min-width-custom(1440px) {
+      padding: 0 70px;
+    }
+  }
 }
 
 .cta__title {
-  margin-bottom: 54px;
+  margin-bottom: 30px;
   font-size: 22px;
   font-weight: 600;
   color: #333333;
@@ -15,7 +24,7 @@
 }
 
 .cta__wrap {
-  padding: 16px 10px;
+  padding: 40px 20px;
   background: #fcfcfc;
   border-radius: 45px;
   .cta__form-send {
@@ -39,8 +48,11 @@
     padding: 38px 30px;
   }
   @include min-width-1280 {
-    max-width: 1286px;
+    max-width: 100%;
     padding: 38px 57px;
+  }
+  @include min-width-custom(1440px) {
+
   }
 }
 
@@ -87,14 +99,14 @@
     }
   }
   @include min-width-1024 {
-    width: 230px;
+    width: 24%;
     margin-bottom: 0;
   }
   @include min-width-1280 {
-    width: 260px;
+    width: 23.5%;
   }
-  @include min-width-custom(1440px) {
-    width: 280px;
+  @include min-width-custom(1600px) {
+    width: 25%;
   }
 }
 

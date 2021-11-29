@@ -1,0 +1,36 @@
+.marquee {
+  width: 100vw;
+  margin-bottom: 46px;
+  overflow: hidden;
+  pointer-events: none;
+  @include min-width-1024 {
+    margin-bottom: 112px;
+  }
+  &_index {
+    margin-top: 77px;
+    margin-bottom: 80px;
+  }
+}
+
+.marquee__wrap {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translateX(calc(-25% + 20vw));
+  animation: marquee 20s linear infinite;
+}
+
+.marquee__wrap-text {
+  padding: 0 1vw;
+  font-size: 40px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: $white;
+  text-shadow: 1px 0 0 rgba(0, 0, 0, 0.3), 0 1px 0 rgba(0, 0, 0, 0.3), -1px 0 0 rgba(0, 0, 0, 0.3), 0 -1px 0 rgba(0, 0, 0, 0.3);
+  @include min-width-1024 {
+    font-size: 85px;
+  }
+  @include min-width-1280 {
+    font-size: 96px;
+  }
+}

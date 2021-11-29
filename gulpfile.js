@@ -87,7 +87,7 @@ function jsLib() {
 
 function img() {
   return src('src/img/**/*.{gif,png,jpg,jpeg,ico}')
-    .pipe(cache(imagemin()))
+    // .pipe(cache(imagemin()))
     .pipe(dest('build/img'))
 }
 

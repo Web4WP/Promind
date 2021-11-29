@@ -1,14 +1,19 @@
 extends ../main/layout
 
 block variables
-  - let title = "Project Template"
-  - let bodyClass = ""
+  - let title = "Главная - ProMind"
+  - let bodyClass = "index-page"
   - let headerClass = "header"
   - let footerClass = "footer"
-  - let swiperCSS = true
-  - let swiperJS = true
+  - let typedJS = true;
 
 block main
   main
-    include ../includes/index/index-block
-    include ../blocks/bem-block
+    include ../includes/index/hero
+    include ../includes/index/work
+    include ../blocks/cta
+    div.marquee.marquee_index
+      div.marquee__wrap
+        span.marquee__wrap-text Hello! I wanna be COOL!   Hello! I wanna be COOL!
+        span.marquee__wrap-text Hello! I wanna be COOL!   Hello! I wanna be COOL!
+        span.marquee__wrap-text Hello! I wanna be COOL!   Hello! I wanna be COOL!

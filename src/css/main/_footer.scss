@@ -25,20 +25,20 @@
     justify-content: space-evenly;
   }
   @include min-width-1024 {
-    justify-content: space-between;
+    justify-content: space-around;
   }
   @include min-width-1280 {
     padding-bottom: 12px;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 }
 
 .footer__menu {
   display: none;
-  @include min-width-1024 {
+  @include min-width-1280 {
     display: block;
-    width: 46.5%;
-    /*margin-right: 72px;*/
+    width: 48.5%;
+    margin-right: 72px;
   }
   @include min-width-1280 {
     width: 48.5%;
@@ -54,7 +54,10 @@
   margin-bottom: 25px;
   font-size: 16px;
   font-weight: 500;
-  @include min-width-1280 {
+  @include min-width-1024 {
+    font-size: 16px;
+  }
+  @include min-width-custom(1440px) {
     font-size: 18px;
   }
 }
@@ -89,6 +92,16 @@
         padding-left: 70px;
       }
     }
+    @include min-width-custom(1900px) {
+      .footer__column-item {
+        padding-left: 132px;
+      }
+    }
+    @include min-width-custom(2500px) {
+      .footer__column-item {
+        padding-left: 270px;
+      }
+    }
   }
 }
 
@@ -108,10 +121,10 @@
   margin-bottom: 9px;
   font-size: 18px;
   font-weight: 500;
-  @include min-width-1024 {
+  @include min-width-768 {
     font-size: 16px;
   }
-  @include min-width-1280 {
+  @include min-width-custom(1440px) {
     font-size: 18px;
   }
 }
@@ -121,6 +134,9 @@
   font-size: 14px;
   font-style: normal;
   text-decoration: underline;
+  @include min-width-custom(1440px) {
+    font-size: 14px;
+  }
 }
 
 .footer__column-phone {
@@ -130,14 +146,6 @@
   @include min-width-1280 {
     margin-bottom: 7px;
   }
-}
-
-.footer__column-time {
-
-}
-
-.footer__column-mail {
-
 }
 
 .footer__column-flex {
@@ -169,10 +177,6 @@
   margin-right: 9px;
 }
 
-.footer__column-lang-span {
-
-}
-
 .footer__column-presentation {
   padding-top: 3px;
   padding-bottom: 3px;
@@ -193,14 +197,25 @@
   padding: 21px 0 16px;
   font-size: 14px;
   border-top: 1px solid #bdbdbd;
-  @include min-width-1024 {
+  @include min-width-768 {
+    font-size: 13px;
     flex-direction: row;
+  }
+  @include min-width-1024 {
     padding: 18px 0;
+  }
+  @include min-width-1280 {
+  }
+  @include min-width-custom(1440px) {
+    font-size: 14px;
   }
 }
 
 .footer__copyright-social {
   margin-bottom: 8px;
+  @include min-width-768 {
+    margin-bottom: 0;
+  }
 }
 
 .footer__copyright-social-link {
@@ -214,8 +229,7 @@
 .footer__copyright-privacy {
   margin-bottom: 10px;
   text-decoration: underline;
-}
-
-.footer__copyright-dev {
-
+  @include min-width-768 {
+    margin-bottom: 0;
+  }
 }
