@@ -1,0 +1,28 @@
+extends ../main/layout
+
+block variables
+  - let title = "О нас - ProMind"
+  - let bodyClass = "about-page"
+  - let headerClass = "header"
+  - let footerClass = "footer"
+  - let lottieJS = true;
+  - let lottiePlayerJS = true;
+
+block main
+  main
+    div.container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная
+        li.breadcrumbs__separator /
+        li.breadcrumbs__item О нас
+    include ../includes/about/about-hero
+    include ../includes/about/about-promind
+    include ../includes/about/about-partner
+    include ../includes/about/about-design
+    include ../blocks/cta
+    //-div.marquee.marquee_index
+      div.marquee__wrap
+        span.marquee__wrap-text Hello! I wanna be COOL!   Hello! I wanna be COOL!
+        span.marquee__wrap-text Hello! I wanna be COOL!   Hello! I wanna be COOL!
+        span.marquee__wrap-text Hello! I wanna be COOL!   Hello! I wanna be COOL!

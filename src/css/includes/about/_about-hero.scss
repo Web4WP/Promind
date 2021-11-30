@@ -1,0 +1,60 @@
+.about-page {
+  main {
+    padding-top: 50px;
+    @include min-width-1280 {
+      padding-top: 80px;
+    }
+  }
+  .breadcrumbs {
+    position: absolute;
+    top: 70px;
+    margin-bottom: 0;
+    z-index: 100;
+    @include min-width-1024 {
+      top: 85px;
+    }
+    @include min-width-1280 {
+      top: 123px;
+    }
+  }
+  .breadcrumbs__item {
+    color: $white;
+  }
+  .breadcrumbs__link,
+  .breadcrumbs__separator {
+    color: #e7e7e7;
+  }
+}
+
+.about-hero {
+  position: relative;
+  height: 340px;
+  margin-bottom: 87px;
+  @include min-width-1024 {
+    height: 400px;
+  }
+  @include min-width-1280 {
+    height: 100vh;
+    margin-bottom: 150px;
+  }
+}
+
+.about-hero__sound {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/svg/video-on.svg") center center no-repeat;
+  @include min-width-1280 {
+    bottom: 50px;
+    right: 50px;
+  }
+  @include min-width-custom(1900px) {
+    bottom: 150px;
+  }
+}
+
+.about-hero__sound.off {
+  background: url("../img/svg/video-off.svg") center center no-repeat;
+}

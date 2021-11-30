@@ -142,5 +142,5 @@ exports.js = js
 exports.img = img
 exports.svg = svg
 
-exports.build = series(clean, fonts, html, css, cssLib, js, jsLib, img, svg);
-exports.start = series(clean, fonts, html, css, cssLib, js, jsLib, img, svg, serve);
+exports.build = series(clean, fonts, html, css, cssLib, js, jsLib, img, files, svg);
+exports.start = series(clean, fonts, html, css, cssLib, js, jsLib, img, svg, files, serve);

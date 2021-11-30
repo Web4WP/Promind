@@ -166,6 +166,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setInterval(move, 20);
 
+  }
+
+  else if (window.location.pathname == '/about.html') {
+
+    /* Включаем / выключаем звук на видео по клику */
+    let video = document.querySelector('.about-hero__video');
+    video.muted = true;
+    document.querySelector('.about-hero__sound').addEventListener('click', function (e) {
+      e.currentTarget.classList.toggle('off');
+      if(video.muted === true) {
+        video.muted = false
+      }
+      else if (video.muted === false) {
+        video.muted = true
+      }
+    });
+
+    bodymovin.loadAnimation({
+      container: document.getElementById('aboutDesignMob'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './files/anim1.json'
+    })
+
+    bodymovin.loadAnimation({
+      container: document.getElementById('aboutDesign'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './files/anim1.json'
+    })
 
   }
 
