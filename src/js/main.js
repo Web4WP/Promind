@@ -125,11 +125,6 @@ document.addEventListener('DOMContentLoaded', function () {
   let imv = new Inputmask("+7 (999) 999-99-99");
   im.mask(maskPhoneVacancy);
 
-  // Добавляем маску для ввода телефона (Форма CTA-блока - inputmask.min.js)
-  let ctaForm = document.querySelector('#userPhoneCta');
-  let imcta = new Inputmask("+7 (999) 999-99-99");
-  imcta.mask(ctaForm);
-
 
   if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
 
@@ -165,6 +160,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     setInterval(move, 20);
+
+  }
+
+  else if (window.location.pathname !== '/vacancy.html') {
+
+    // Добавляем маску для ввода телефона (Форма CTA-блока - inputmask.min.js)
+    let ctaForm = document.querySelector('#userPhoneCta');
+    let imcta = new Inputmask("+7 (999) 999-99-99");
+    imcta.mask(ctaForm);
 
   }
 
