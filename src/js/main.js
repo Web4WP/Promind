@@ -163,54 +163,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 
-  else if (window.location.pathname !== '/vacancy.html' && window.location.pathname !== '/dev.html' && window.location.pathname !== '/project.html') {
-
-    // Добавляем маску для ввода телефона (Форма CTA-блока - inputmask.min.js)
-    let ctaForm = document.querySelector('#userPhoneCta');
-    let imcta = new Inputmask("+7 (999) 999-99-99");
-    imcta.mask(ctaForm);
-
-  }
-
-  else if (window.location.pathname == '/about.html') {
-
-    /* Включаем / выключаем звук на видео по клику */
-    let video = document.querySelector('.about-hero__video');
-    video.muted = true;
-    document.querySelector('.about-hero__sound').addEventListener('click', function (e) {
-      e.currentTarget.classList.toggle('off');
-      if(video.muted === true) {
-        video.muted = false
-      }
-      else if (video.muted === false) {
-        video.muted = true
-      }
-    });
-
-    bodymovin.loadAnimation({
-      container: document.getElementById('aboutDesignMob'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: './files/anim1.json'
-    })
-
-    bodymovin.loadAnimation({
-      container: document.getElementById('aboutDesign'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: './files/anim1.json'
-    })
-
-  }
-
-  else if (window.location.pathname == '/portfolio.html') {
-
-    let mixer = mixitup('.portfolio__wrap');
-
-  }
-
   else if (window.location.pathname == '/support.html') {
 
     // Слайдер тарифов на странице "Техническая поддержка" (Мобильная версия)
@@ -281,6 +233,55 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
   }
+
+  else if (window.location.pathname !== '/vacancy.html' && window.location.pathname !== '/dev.html' && window.location.pathname !== '/project.html') {
+
+    // Добавляем маску для ввода телефона (Форма CTA-блока - inputmask.min.js)
+    let ctaForm = document.querySelector('#userPhoneCta');
+    let imcta = new Inputmask("+7 (999) 999-99-99");
+    imcta.mask(ctaForm);
+
+  }
+
+  else if (window.location.pathname == '/about.html') {
+
+    /* Включаем / выключаем звук на видео по клику */
+    let video = document.querySelector('.about-hero__video');
+    video.muted = true;
+    document.querySelector('.about-hero__sound').addEventListener('click', function (e) {
+      e.currentTarget.classList.toggle('off');
+      if(video.muted === true) {
+        video.muted = false
+      }
+      else if (video.muted === false) {
+        video.muted = true
+      }
+    });
+
+    bodymovin.loadAnimation({
+      container: document.getElementById('aboutDesignMob'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './files/anim1.json'
+    })
+
+    bodymovin.loadAnimation({
+      container: document.getElementById('aboutDesign'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './files/anim1.json'
+    })
+
+  }
+
+  else if (window.location.pathname == '/portfolio.html') {
+
+    let mixer = mixitup('.portfolio__wrap');
+
+  }
+
   else if (window.location.pathname == '/design.html') {
 
     new Swiper('.design__slider', {
