@@ -234,15 +234,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 
-  else if (window.location.pathname !== '/vacancy.html' && window.location.pathname !== '/dev.html' && window.location.pathname !== '/project.html') {
-
-    // Добавляем маску для ввода телефона (Форма CTA-блока - inputmask.min.js)
-    let ctaForm = document.querySelector('#userPhoneCta');
-    let imcta = new Inputmask("+7 (999) 999-99-99");
-    imcta.mask(ctaForm);
-
-  }
-
   else if (window.location.pathname == '/about.html') {
 
     /* Включаем / выключаем звук на видео по клику */
@@ -274,6 +265,70 @@ document.addEventListener('DOMContentLoaded', function () {
       path: './files/anim1.json'
     })
 
+    bodymovin.loadAnimation({
+      container: document.getElementById('aboutConversion'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './files/anim2.json'
+    })
+
+    bodymovin.loadAnimation({
+      container: document.getElementById('aboutConversionMob'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './files/anim2.json'
+    })
+
+    bodymovin.loadAnimation({
+      container: document.getElementById('aboutSpeed'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './files/anim3.json'
+    })
+
+    bodymovin.loadAnimation({
+      container: document.getElementById('aboutSpeedMob'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './files/anim3.json'
+    })
+
+    bodymovin.loadAnimation({
+      container: document.getElementById('aboutApproach'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './files/anim4.json'
+    })
+
+    bodymovin.loadAnimation({
+      container: document.getElementById('aboutApproachMob'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './files/anim4.json'
+    })
+
+    bodymovin.loadAnimation({
+      container: document.getElementById('aboutSupport'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './files/anim5.json'
+    })
+
+    bodymovin.loadAnimation({
+      container: document.getElementById('aboutSupportMob'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './files/anim5.json'
+    })
+
   }
 
   else if (window.location.pathname == '/portfolio.html') {
@@ -301,6 +356,15 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       },
     });
+
+  }
+
+  else if (window.location.pathname !== '/vacancy.html' && window.location.pathname !== '/dev.html' && window.location.pathname !== '/project.html') {
+
+    // Добавляем маску для ввода телефона (Форма CTA-блока - inputmask.min.js)
+    let ctaForm = document.querySelector('#userPhoneCta');
+    let imcta = new Inputmask("+7 (999) 999-99-99");
+    imcta.mask(ctaForm);
 
   }
 

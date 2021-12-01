@@ -24,6 +24,12 @@
   .breadcrumbs__separator {
     color: #e7e7e7;
   }
+  .cta {
+    margin-bottom: 84px;
+    @include min-width-1280 {
+      margin-bottom: 140px;
+    }
+  }
 }
 
 .about-hero {
