@@ -9,7 +9,7 @@
 
 .project {
   position: relative;
-  margin-bottom: 84px;
+  margin-bottom: 92px;
   @include min-width-1280 {
     margin-bottom: 152px;
   }
@@ -23,11 +23,11 @@
   text-transform: uppercase;
   line-height: 0.8;
   span {
-    padding-left: 24px;
     font-size: 35px;
     color: $white;
     text-shadow: 1px 0 0 $black, 0 1px 0 $black, -1px 0 0 $black, 0 -1px 0 $black;
     @include min-width-custom(375px) {
+      padding-left: 24px;
       font-size: 40px;
     }
   }
@@ -36,9 +36,15 @@
   }
   @include min-width-1280 {
     margin-bottom: 93px;
-    font-size: 120px;
+    font-size: 100px;
     span {
       padding-left: 56px;
+      font-size: 60px;
+    }
+  }
+  @include min-width-custom(1440px) {
+    font-size: 120px;
+    span {
       font-size: 70px;
     }
   }
@@ -51,11 +57,10 @@
   @include min-width-768 {
     float: right;
     margin-top: -185px;
-    margin-right: 65px;
   }
   @include min-width-1024 {
     max-width: 290px;
-    margin-right: 175px;
+    margin-right: 120px;
   }
   @include min-width-1280 {
     margin-top: -265px;

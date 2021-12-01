@@ -12,9 +12,11 @@
 }
 
 .request__content {
+  height: 100vh;
   border-radius: 0;
   border: none;
   @include min-width-1280 {
+    height: auto;
     border-radius: 20px;
   }
 }
