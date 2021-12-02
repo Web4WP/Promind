@@ -341,9 +341,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     new Swiper('.design__slider', {
       loop: true,
-      /*autoplay: {
+      autoplay: {
         delay: 3000,
-      },*/
+      },
+      speed: 500,
       effect: 'fade',
       fadeEffect: {
         crossFade: true
@@ -356,6 +357,29 @@ document.addEventListener('DOMContentLoaded', function () {
         },
       },
     });
+
+    new Typed('.we__subtitle', {
+      stringsElement: '.we__subtitle-wrap',
+      typeSpeed: 75,
+      backSpeed: 0,
+      backDelay: 1400,
+      showCursor: false,
+      fadeOut: true,
+      loop: true,
+    });
+
+    new Swiper('.we__slider', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+    });
+
+    let mixerCase = mixitup('.case__wrap');
 
   }
 

@@ -1,0 +1,135 @@
+.case {
+  margin-bottom: 100px;
+}
+
+.case__title {
+  margin-bottom: 56px;
+  font-size: 65px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  @include min-width-custom(375px) {
+    font-size: 80px;
+  }
+  @include min-width-1280 {
+    font-size: 100px;
+  }
+  @include min-width-custom(1440px) {
+    margin-bottom: 64px;
+    font-size: 150px;
+  }
+}
+
+.case__filter-title {
+  margin-bottom: 19px;
+  font-weight: 600;
+  color: #333333;
+  @include min-width-1024 {
+    display: none;
+  }
+}
+
+.case__filter-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+  @include min-width-1024 {
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+  @include min-width-1280 {
+    margin-bottom: 75px;
+  }
+}
+
+.case__filter-btn {
+  margin-right: 6px;
+  margin-bottom: 15px;
+  padding: 5px 19px 5px 20px;
+  font-family: $Montserrat;
+  font-size: 13px;
+  font-weight: 500;
+  color: #686868;
+  border: 1px solid #686868;
+  border-radius: 19px;
+  transition: 0.2s;
+  text-transform: uppercase;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover, &:focus {
+    color: $white;
+    background: $blue;
+  }
+  @include min-width-1024 {
+    padding: 7px 25px;
+    font-size: 14px;
+  }
+  @include min-width-1280 {
+    margin-right: 25px;
+    padding: 5px 21px;
+    font-weight: 600;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.case__filter-btn.active {
+  color: $white;
+  background: $blue;
+}
+
+.case__block {
+
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.case__wrap {
+
+}
+
+.case__item {
+  margin-bottom: 60px;
+  @include min-width-1280 {
+    margin-bottom: 129.6px;
+    &:last-child {
+      margin-bottom: 121px;
+    }
+  }
+}
+
+.case__item-title {
+  max-width: 92%;
+  margin: 0 auto 30px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  @include min-width-1280 {
+    max-width: 100%;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+}
+
+.case__item-content {
+  text-align: center;
+}
+
+.case__item-content-img {
+  display: none;
+  width: 100%;
+  &_mob {
+    width: 100%;
+    display: block;
+  }
+  @include min-width-1024 {
+    display: block;
+    &_mob {
+      display: none;
+    }
+  }
+}

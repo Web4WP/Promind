@@ -11,8 +11,12 @@
   .breadcrumbs {
     position: absolute;
     top: 70px;
+    margin-bottom: 0;
     z-index: 10;
     mix-blend-mode: exclusion;
+    @include min-width-1280 {
+      top: 123px;
+    }
   }
 
   .breadcrumbs__item,
@@ -21,7 +25,10 @@
   }
 
   .cta {
-    display: none;
+    margin-bottom: 77px;
+    @include min-width-1280 {
+      margin-bottom: 130px;
+    }
   }
 
 }
@@ -34,6 +41,11 @@
     z-index: 10;
     text-align: center;
     mix-blend-mode: exclusion;
+    @include min-width-1280 {
+      bottom: 8vh; /*45px*/
+      left: 66px;
+      text-align: left;
+    }
   }
 
   .swiper-pagination-bullet {
@@ -57,14 +69,17 @@
     }
   }
 
+  @include min-width-1280 {
+    margin-bottom: 149px;
+  }
+
 }
 
 .design__slider {
-  margin-bottom: 100px;
-  /*position: absolute;
-  top: 80px;
-  left: 0;
-  right: 0;*/
+  margin-bottom: 78px;
+  @include min-width-1280 {
+    height: 100vh; /* 820px */
+  }
 }
 
 .design__slider-wrap {
@@ -83,10 +98,31 @@
       color: #636363;
     }
   }
+  &_left {
+    .design__slider-item-wrap {
+      right: auto;
+      left: 104px;
+    }
+  }
+  @include min-width-1280 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
-.design__slider-wrap {
+.design__slider-item-wrap {
 
+  @include min-width-1280 {
+    position: absolute;
+    top: 377px;
+    right: 104px;
+    max-width: 450px;
+    transform: translateY(-50%);
+    .container {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
 }
 
 .design__slider-item-title {
@@ -99,19 +135,39 @@
   @include min-width-custom(375px) {
     font-size: 40px;
   }
+  @include min-width-1280 {
+    margin-bottom: 35px;
+    font-size: 60px;
+  }
 }
 
 .design__slider-item-text {
   font-size: 14px;
   color: #b7b7b7;
   line-height: 1.42;
+  @include min-width-1280 {
+    max-width: 300px;
+    line-height: 1.65;
+  }
 }
 
 .design__slider-item-img {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
   z-index: -1;
+  &_mob {
+    display: inline-block;
+  }
+  @include min-width-1280 {
+    display: inline-block;
+    top: 30px;
+    height: 100%;
+    &_mob {
+      display: none;
+    }
+  }
 }

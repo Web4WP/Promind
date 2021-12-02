@@ -25,6 +25,12 @@
       margin-top: 106px;
     }
   }
+  &_design {
+    margin-bottom: 80px;
+    @include min-width-1280 {
+      margin-bottom: 128px;
+    }
+  }
 }
 
 .marquee__wrap {
