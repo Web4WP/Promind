@@ -1,0 +1,30 @@
+extends ../main/layout
+
+block variables
+  - let title = "Motion дизайн - ProMind"
+  - let bodyClass = "design-page"
+  - let headerClass = "header"
+  - let footerClass = "footer"
+  - let swiperCSS = true
+  - let swiperJS = true
+  - let typedJS = true;
+  - let MixItUpJS = true;
+
+block main
+  main
+    div.container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная
+        li.breadcrumbs__separator /
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="vacancy.html") Услуги
+        li.breadcrumbs__separator /
+        li.breadcrumbs__item Моушн-дизайн
+    section.motion
+      div.container
+        div.motion__wrap
+          div.motion__left
+            h1.motion__title Motion design
+            p.motion__text Анимация и моушн-дизайн новый уровень эмоций и их преимущества в сравнение с обычными статическими изображениями очевидны. Это информативность, актуальность, современность, эффектность и лаконичность.
+

@@ -383,7 +383,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 
-  else if (window.location.pathname !== '/vacancy.html' && window.location.pathname !== '/dev.html' && window.location.pathname !== '/project.html') {
+  else if (window.location.pathname !== '/vacancy.html' && window.location.pathname !== '/dev.html' && window.location.pathname !== '/project.html' && window.location.pathname !== '/privacy.html') {
 
     // Добавляем маску для ввода телефона (Форма CTA-блока - inputmask.min.js)
     let ctaForm = document.querySelector('#userPhoneCta');
