@@ -419,6 +419,83 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 
+  else if (window.location.pathname == '/service.html') {
+
+
+    $('.services-slider__item').on('click', function() {
+      let thisSlide = $(this);
+      if(!thisSlide.hasClass('services-slider__item_active')){
+        $('.services-slider__item').removeClass('services-slider__item_active');
+        $('.services-slider__item').removeClass('small');
+        setTimeout(function(){
+          if(thisSlide.index() == 0){
+            $('.services-slider__item').removeClass('first second third');
+            $('.services-slider__item:nth-child(1)').addClass('first');
+            $('.services-slider__item:nth-child(2)').addClass('second');
+            $('.services-slider__item:nth-child(3)').addClass('third');
+            setTimeout(function(){
+              thisSlide.addClass('services-slider__item_active');
+            }, 0)
+          }else if(thisSlide.index() == 1){
+            $('.services-slider__item').removeClass('first second third');
+            $('.services-slider__item:nth-child(1)').addClass('second');
+            $('.services-slider__item:nth-child(2)').addClass('first');
+            $('.services-slider__item:nth-child(3)').addClass('third');
+            setTimeout(function(){
+              thisSlide.addClass('services-slider__item_active');
+            }, 0)
+          }else if(thisSlide.index() == 2){
+            $('.services-slider__item').removeClass('first second third');
+            $('.services-slider__item:nth-child(1)').addClass('second');
+            $('.services-slider__item:nth-child(2)').addClass('third');
+            $('.services-slider__item:nth-child(3)').addClass('first');
+            setTimeout(function(){
+              thisSlide.addClass('services-slider__item_active');
+            }, 0)
+          }
+          //thisSlide.addClass('services-slider__item_active');
+        }, 0)
+      }
+    })
+
+    new Typed('#serv-code', {
+      strings: [
+        '<div class="code__line">'
+        +'	<span class="code__color_blue">var</span> view = <span class="code__color_orange">UILabel</span>()'
+        +'	<br>view.frame = <span class="code__color_orange">CGRect</span>(x: <span class="code__color_orange">0</span>, y: <span class="code__color_orange">0</span>, width: <span class="code__color_orange">745</span>, height: <span class="code__color_orange">518</span>)'
+        +'	<br>view.backgroundColor = .white'
+        +'</div>'
+        +'<div class="code__line">'
+        +'	let image0 = <span class="code__color_orange">UIImage</span>(named: <span class="code__color_green">"25332.jpg"</span>)?.cgImage'
+        +'	<br>let layer0 = <span class="code__color_orange">CALayer</span>()'
+        +'	<br>layer0.contents = image0'
+        +'	<br>layer0.transform = <span class="code__color_orange">CATransform3DMakeAffineTransform(CGAffineTransform</span>(a: <span class="code__color_orange">1</span>, b: <span class="code__color_orange">0</span>, <span class="code__color_orange">C</span>: <span class="code__color_orange">0</span>, d: <span class="code__color_orange">0.96</span>, tx: <span class="code__color_orange">0</span>, <br>ty: <span class="code__color_orange">0.02</span>))'
+        +'	<br>layer0.bound = view.bounds'
+        +'	<br>layer0.position = view.center'
+        +'	<br>view.layer.addSublayer(layer0)'
+        +'</div>'
+        +'<div class="code__line">'
+        +'	<span class="code__color_blue">var</span> parent = <span class="code__color_blue">self</span>.view!'
+        +'	<br>parent.addSubview(view)'
+        +'	<br>view.translatesAutoresizingMaskIntoConstraints = <span class="code__color_orange">false</span>'
+        +'	<br>view.widthAnchor.constraint(equalToConstant: <span class="code__color_orange">745</span>).isActive = <span class="code__color_orange">true</span>'
+        +'	<br>view.heightAnchor.constraint(equalToConstant: <span class="code__color_orange">518</span>).isActive = <span class="code__color_orange">true</span>'
+        +'	<br>view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: -<span class="code__color_orange">25</span>).isActive = <span class="code__color_orange">true</span>'
+        +'	<br>view.topAnchor.constraint(equalTo: parent.topAnchor, constant: <span class="code__color_orange">4469</span>).isActive = <span class="code__color_orange">true</span>'
+        +'</div>'
+      ],
+      typeSpeed: 0,
+      backSpeed: 20,
+      backDelay: 200,
+      showCursor: false,
+      fadeOut: true,
+      loop: false,
+    });
+
+
+
+  }
+
   else if (window.location.pathname !== '/vacancy.html' && window.location.pathname !== '/dev.html' && window.location.pathname !== '/project.html' && window.location.pathname !== '/privacy.html') {
 
     // Добавляем маску для ввода телефона (Форма CTA-блока - inputmask.min.js)

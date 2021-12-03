@@ -1,0 +1,121 @@
+.motion-serv {
+  margin-bottom: 35px;
+  @include min-width-1280 {
+    margin-bottom: 169px;
+  }
+}
+
+.motion-serv__title {
+  margin-bottom: 43px;
+  font-size: 80px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: right;
+  span {
+    display: block;
+    font-size: 60px;
+    color: $white;
+    text-transform: lowercase;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 1), 0 1px 0 rgba(0, 0, 0, 1), -1px 0 0 rgba(0, 0, 0, 1), 0 -1px 0 rgba(0, 0, 0, 1);
+  }
+  @include min-width-1280 {
+    margin-bottom: 19px;
+    font-size: 130px;
+    line-height: 1;
+    span {
+      font-size: 84px;
+    }
+  }
+}
+
+.motion-serv__wrap {
+  display: flex;
+  flex-direction: column-reverse;
+  @include min-width-1280 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.motion-serv__left {
+  margin-bottom: 41px;
+  @include min-width-1280 {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.motion-serv__left-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  span {
+    color: $blue;
+  }
+  @include min-width-1280 {
+    margin-bottom: 60px;
+    font-size: 36px;
+    letter-spacing: -0.06em;
+  }
+}
+
+.motion-serv__text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7c7d87;
+  @include min-width-1280 {
+    font-size: 16px;
+  }
+}
+
+.motion-serv__link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 29px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  border: 1px solid #333333;
+  border-radius: 40px;
+  @include min-width-1280 {
+    margin-top: 70px;
+    padding: 14px 69px;
+    font-size: 18px;
+  }
+}
+
+.motion-serv__link-text {
+
+}
+
+.motion-serv__link-svg {
+  width: 28px;
+  height: 12px;
+  margin-left: 5px;
+  @include min-width-1280 {
+    margin-left: 11px;
+  }
+}
+
+.motion-serv__right {
+  @include min-width-1280 {
+    width: 45%;
+  }
+}
+
+.motion-serv__right-video {
+  margin-top: -23px;
+  video {
+
+  }
+  @include min-width-1024 {
+    max-width: 65%;
+    margin: 0 auto;
+  }
+  @include min-width-1280 {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,133 @@
+.serv-dev {
+  margin-bottom: 104px;
+  @include min-width-1280 {
+    margin-bottom: 128px;
+  }
+}
+
+.serv-dev__title {
+  margin-bottom: 47px;
+  font-size: 100px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  span {
+    display: block;
+    font-size: 50px;
+    color: $white;
+    text-transform: lowercase;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 1), 0 1px 0 rgba(0, 0, 0, 1), -1px 0 0 rgba(0, 0, 0, 1), 0 -1px 0 rgba(0, 0, 0, 1);
+  }
+  @include min-width-1280 {
+    margin-bottom: 41px;
+    font-size: 216px;
+    line-height: 1;
+    span {
+      padding-left: 246px;
+      font-size: 89px;
+    }
+  }
+}
+
+.serv-dev__wrap {
+  @include min-width-1280 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.serv-dev__left {
+  margin-bottom: 41px;
+  @include min-width-1280 {
+    width: 45%;
+    margin-bottom: 0;
+  }
+}
+
+.serv-dev__left-code {
+  .code__line {
+    margin-top: 36px;
+    font-size: 10px;
+  }
+  .code__line:first-child {
+    margin: 0;
+  }
+  .code__color_blue {
+    color: #725EE1;
+  }
+  .code__color_orange {
+    color: #F16B16;
+  }
+  .code__color_green {
+    color: #20A471;
+  }
+  @include min-width-1280 {
+    .code__line {
+      font-size: 12px;
+    }
+  }
+}
+
+.serv-dev__img {
+
+}
+
+.serv-dev__right {
+  @include min-width-1280 {
+    width: 46.4%;
+  }
+}
+
+.serv-dev__right-title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  span {
+    color: $blue;
+  }
+  @include min-width-1280 {
+    margin-bottom: 60px;
+    font-size: 36px;
+    line-height: 1.5;
+  }
+}
+
+.serv-dev__text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7c7d87;
+  @include min-width-1280 {
+    font-size: 16px;
+  }
+}
+
+.serv-dev__link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 29px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  border: 1px solid #333333;
+  border-radius: 40px;
+  @include min-width-1280 {
+    margin-top: 70px;
+    padding: 14px 33px;
+    font-size: 18px;
+  }
+}
+
+.serv-dev__link-text {
+
+}
+
+.serv-dev__link-svg {
+  width: 28px;
+  height: 12px;
+  margin-left: 5px;
+  @include min-width-1280 {
+    margin-left: 11px;
+  }
+}

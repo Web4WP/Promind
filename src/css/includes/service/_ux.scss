@@ -1,0 +1,134 @@
+.ux {
+  margin-bottom: 102px;
+  @include min-width-1280 {
+    margin-bottom: 22px;
+  }
+}
+
+.ux__wrap {
+  display: flex;
+  flex-direction: column-reverse;
+  @include min-width-1280 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.ux__left {
+  @include min-width-1280 {
+    width: 47%;
+  }
+}
+
+.ux__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333333;
+  line-height: 150%;
+  span {
+    color: $blue;
+  }
+  @include min-width-1280 {
+    margin-bottom: 60px;
+    font-size: 34px;
+    font-weight: 700;
+  }
+}
+
+.ux__text {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7c7d87;
+  @include min-width-1280 {
+    font-size: 16px;
+  }
+}
+
+.ux__link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 29px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  border: 1px solid #333333;
+  border-radius: 40px;
+  @include min-width-1280 {
+    margin-top: 70px;
+    padding: 15px 45px;
+    font-size: 18px;
+  }
+}
+
+.ux__link-text {
+
+}
+
+.ux_link-svg {
+  width: 28px;
+  height: 12px;
+  margin-left: 5px;
+  @include min-width-1280 {
+    margin-left: 14px;
+  }
+}
+
+.ux__right {
+  text-align: right;
+  @include min-width-768 {
+    text-align: center;
+  }
+  @include min-width-1280 {
+    width: 50%;
+    text-align: right;
+  }
+}
+
+.ux__right-text {
+  padding-right: 8px;
+  font-size: 150px;
+  font-weight: 900;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-shadow: 1px 0 0 rgba(0, 0, 0, 1), 0 1px 0 rgba(0, 0, 0, 1), -1px 0 0 rgba(0, 0, 0, 1), 0 -1px 0 rgba(0, 0, 0, 1);
+  @include min-width-1280 {
+    margin-top: -49px;
+    padding-right: 0;
+    font-size: 300px;
+    line-height: 1;
+    text-shadow: 2px 0 0 rgba(0, 0, 0, 1), 0 2px 0 rgba(0, 0, 0, 1), -2px 0 0 rgba(0, 0, 0, 1), 0 -2px 0 rgba(0, 0, 0, 1);
+  }
+}
+
+.ux__right-video {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  video {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 99%;
+    height: 98%;
+    object-fit: cover;
+  }
+}
+
+.ux__right-video-title {
+  position: relative;
+  height: 284px;
+  margin-top: -71px;
+  mix-blend-mode: screen;
+  font-size: 220px;
+  font-weight: 900;
+  background-color: #fff;
+  overflow: hidden;
+  @include min-width-1280 {
+    height: auto;
+    margin-top: -99px;
+    padding-right: 36px;
+    font-size: 400px;
+  }
+}

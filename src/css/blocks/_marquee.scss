@@ -37,6 +37,12 @@
       margin-bottom: 128px;
     }
   }
+  &_service {
+    margin-bottom: 81px;
+    @include min-width-1280 {
+      margin-bottom: 133px;
+    }
+  }
 }
 
 .marquee__wrap {

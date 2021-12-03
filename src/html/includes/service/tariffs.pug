@@ -1,0 +1,103 @@
+section.tariffs
+  div.container
+    h1.tariffs__title Услуги
+    div.tariffs__wrap
+      div.tariffs__subtitle Категория сайта
+      ul#pills-tab.tariffs__list.nav.nav-pills(role="tablist")
+        li.tariffs__item.nav-item(role="presentation")
+          button#pills-home-tab.tariffs__btn.nav-link.active(data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true") Лендинг
+        li.tariffs__item.nav-item(role="presentation")
+          button#pills-profile-tab.tariffs__btn.nav-link(data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false") Интернет-магазин
+        li.tariffs__item.nav-item(role="presentation")
+          button#pills-contact-tab.tariffs__btn.nav-link(data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false") многостраничный сайт
+      div#pills-tabContent.tariffs__content.tab-content
+        div#pills-home.tariffs__block.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="pills-home-tab")
+          div.tariffs__block-title Landing page
+          div.tariffs__block-subtitle - одностраничный сайт
+          ul.tariffs__block-list
+            li.tariffs__block-item <span>Индивидуальный дизайн</span><span>Прототипирование</span><span>Разработка сайта на html-коде<span>
+            li.tariffs__block-item <span>Слайд-шоу</span><span>Визуальные эффекты</span><span>Форма обратной связи<span>
+            li.tariffs__block-item <span>Оптимизация картинок</span><span>Интеграция видео</span>
+            li.tariffs__block-item <span>Адаптивность и тестирование сайта</span><span>Настройка хостинга</span><span>Перенос сайта на основной домен<span>
+          img.tariffs__block-img(src="img/svg/tariffs-1-mob.svg", alt="")
+        div#pills-profile.tariffs__block.tab-pane.fade(role="tabpanel" aria-labelledby="pills-profile-tab")
+          div.tariffs__block-title Интернет-магазин
+          div.tariffs__block-subtitle - одностраничный сайт
+          ul.tariffs__block-list
+            li.tariffs__block-item <span>Индивидуальный дизайн</span><span>Прототипирование</span><span>Разработка сайта на html-коде<span>
+            li.tariffs__block-item <span>Слайд-шоу</span><span>Визуальные эффекты</span><span>Форма обратной связи<span>
+            li.tariffs__block-item <span>Оптимизация картинок</span><span>Интеграция видео</span>
+            li.tariffs__block-item <span>Адаптивность и тестирование сайта</span><span>Настройка хостинга</span><span>Перенос сайта на основной домен<span>
+          img.tariffs__block-img(src="img/svg/tariffs-1-mob.svg", alt="")
+        div#pills-contact.tariffs__block.tab-pane.fade(role="tabpanel" aria-labelledby="pills-contact-tab")
+          div.tariffs__block-title Многостраничный сайт
+          div.tariffs__block-subtitle - одностраничный сайт
+          ul.tariffs__block-list
+            li.tariffs__block-item <span>Индивидуальный дизайн</span><span>Прототипирование</span><span>Разработка сайта на html-коде<span>
+            li.tariffs__block-item <span>Слайд-шоу</span><span>Визуальные эффекты</span><span>Форма обратной связи<span>
+            li.tariffs__block-item <span>Оптимизация картинок</span><span>Интеграция видео</span>
+            li.tariffs__block-item <span>Адаптивность и тестирование сайта</span><span>Настройка хостинга</span><span>Перенос сайта на основной домен<span>
+          img.tariffs__block-img(src="img/svg/tariffs-1-mob.svg", alt="")
+    div.tariffs__slider
+      div.services-slider__item.first.services-slider__item_active.first
+        div.service-preview
+          img.tariffs__slider-img(src="img/svg/tariffs-1-mob.svg", alt="")
+          //-div.service-preview__image.service-preview__image-1
+            img(src="img/svg/tariffs-1-mob.svg", alt="")
+          div.service-preview__btn
+            img(src="img/svg/tariffs-btn.svg", alt="")
+          div.service-preview__head
+            div.service-preview__title Landing page
+            div.service-preview__type одностраничный сайт
+          ul.service-preview__list
+            li.service-preview__item
+              span.service-preview__text Индивидуальный дизайн<br>Прототипирование<br>Разработка сайта на html-коде
+            li.service-preview__item
+              span.service-preview__text Слайд-шоу<br>Визуальные эффекты<br>Форма обратной связи
+            li.service-preview__item
+              span.service-preview__text Оптимизация картинок<br>Интеграция видео
+            li.service-preview__item
+              span.service-preview__text Адаптивность и тестирование сайта<br>Настройка хостинга<br>Перенос сайта на основной домен
+      div.services-slider__item.second.small
+        div.service-preview
+          img.tariffs__slider-img(src="img/svg/tariffs-1-mob.svg", alt="")
+          //-div.service-preview__image.service-preview__image-2
+            img(src="img/svg/tariffs-1-mob.svg", alt="")
+          div.service-preview__btn
+            img(src="img/svg/tariffs-btn.svg", alt="")
+          div.service-preview__head
+            div.service-preview__title Многостраничный сайт
+            div.service-preview__type много страниц и разделов
+          ul.service-preview__list
+            li.service-preview__item
+              span.service-preview__text Индивидуальный дизайн<br>Прототипирование<br>Разработка сайта на html-коде
+            li.service-preview__item
+              span.service-preview__text Слайд-шоу<br>Визуальные эффекты<br>Форма обратной связи
+            li.service-preview__item
+              span.service-preview__text Оптимизация картинок<br>Интеграция видео
+            li.service-preview__item
+              span.service-preview__text Адаптивность и тестирование сайта<br>Настройка хостинга<br>Перенос сайта на основной домен
+            li.service-preview__item.service-preview__item_added
+              span.service-preview__text Установка и настройка движка<br>Создание внутренних индивидуальных страниц<br>Адаптивность внутренних страниц
+      div.services-slider__item.third.small
+        div.service-preview
+          img.tariffs__slider-img(src="img/svg/tariffs-1-mob.svg", alt="")
+          //-div.service-preview__image.service-preview__image-3
+            img(src="img/svg/tariffs-1-mob.svg", alt="")
+          div.service-preview__btn
+            img(src="img/svg/tariffs-btn.svg", alt="")
+          div.service-preview__head
+            div.service-preview__title Интернет-магазин
+            div.service-preview__type онлайн витрина, корзина, личный кабинет
+          ul.service-preview__list
+            li.service-preview__item
+              span.service-preview__text Индивидуальный дизайн<br>Прототипирование<br>Разработка сайта на html-коде
+            li.service-preview__item
+              span.service-preview__text Слайд-шоу<br>Визуальные эффекты<br>Форма обратной связи
+            li.service-preview__item
+              span.service-preview__text Оптимизация картинок<br>Интеграция видео
+            li.service-preview__item
+              span.service-preview__text Адаптивность и тестирование сайта<br>Настройка хостинга<br>Перенос сайта на основной домен
+            li.service-preview__item.service-preview__item_added
+              span.service-preview__text Функции интернет-магазина<br>Структура страниц интернет магазина<br>Добавление 50 позиций и сопутствующих товаров
+
