@@ -1,12 +1,12 @@
 extends ../main/layout
 
 block variables
-  - let title = "Motion дизайн - ProMind"
-  - let bodyClass = "design-page"
-  - let headerClass = "header"
-  - let footerClass = "footer"
-  - let swiperCSS = true
-  - let swiperJS = true
+  - let title = "Motion дизайн - ProMind";
+  - let bodyClass = "motion-page";
+  - let headerClass = "header";
+  - let footerClass = "footer";
+  - let swiperCSS = true;
+  - let swiperJS = true;
   - let typedJS = true;
   - let MixItUpJS = true;
 
@@ -21,10 +21,15 @@ block main
           a.breadcrumbs__link(href="vacancy.html") Услуги
         li.breadcrumbs__separator /
         li.breadcrumbs__item Моушн-дизайн
-    section.motion
-      div.container
-        div.motion__wrap
-          div.motion__left
-            h1.motion__title Motion design
-            p.motion__text Анимация и моушн-дизайн новый уровень эмоций и их преимущества в сравнение с обычными статическими изображениями очевидны. Это информативность, актуальность, современность, эффектность и лаконичность.
-
+    include ../includes/motion/motion
+    include ../includes/motion/motion-partner
+    include ../includes/motion/make
+    include ../includes/motion/creative
+    include ../includes/motion/motion-case
+    include ../includes/motion/faq
+    include ../blocks/cta
+    div.marquee.marquee_motion
+      div.marquee__wrap
+        span.marquee__wrap-text Hello! I wanna be COOL!   Hello! I wanna be COOL!
+        span.marquee__wrap-text Hello! I wanna be COOL!   Hello! I wanna be COOL!
+        span.marquee__wrap-text Hello! I wanna be COOL!   Hello! I wanna be COOL!

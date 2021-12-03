@@ -31,6 +31,12 @@
       margin-bottom: 128px;
     }
   }
+  &_motion {
+    margin-bottom: 80px;
+    @include min-width-1280 {
+      margin-bottom: 128px;
+    }
+  }
 }
 
 .marquee__wrap {

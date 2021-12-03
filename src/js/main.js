@@ -337,6 +337,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 
+  else if (window.location.pathname == '/motion.html') {
+    new Swiper('.motion-case__sw', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: -62,
+        },
+        500: {
+          slidesPerView: 1,
+          spaceBetween: -60,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: -60,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: -60,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: -80,
+        },
+        1900: {
+          slidesPerView: 4,
+          spaceBetween: -20,
+        },
+      },
+      spaceBetween: 30,
+    });
+  }
+
   else if (window.location.pathname == '/design.html') {
 
     new Swiper('.design__slider', {

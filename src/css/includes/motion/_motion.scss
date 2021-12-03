@@ -1,0 +1,132 @@
+.motion-page {
+
+  .breadcrumbs {
+    margin-bottom: 48px;
+    @include min-width-1280 {
+      margin-bottom: 45px;
+    }
+  }
+
+  .cta {
+    margin-bottom: 76px;
+    @include min-width-1280 {
+      margin-bottom: 130px;
+    }
+  }
+
+}
+
+.motion {
+  margin-bottom: 82px;
+  @include min-width-1280 {
+    margin-bottom: 135px;
+  }
+}
+
+.motion__wrap {
+  @include min-width-1024 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.motion__left {
+  @include min-width-1024 {
+    width: 45%;
+  }
+  @include min-width-1280 {
+    width: 39%;
+  }
+}
+
+.motion__title {
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.2;
+  @include min-width-1280 {
+    margin-bottom: 39px;
+    font-size: 90px;
+  }
+  @include min-width-custom(1440px) {
+    font-size: 115px;
+  }
+}
+
+.motion__left-img-mob {
+  display: block;
+  margin: 0 auto 40px;
+  @include min-width-1024 {
+    display: none;
+  }
+}
+
+.motion__text {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #7c7d87;
+  &_last {
+    @include min-width-1280 {
+      display: none;
+    }
+  }
+  /*@include min-width-1280 {
+    font-size: 16px;
+  }*/
+}
+
+.motion__btn {
+  margin-top: 20px;
+  padding: 18px 45px;
+  font-family: $Inter;
+  font-size: 16px;
+  font-weight: 500;
+  color: $white;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  /*background: $white;*/
+  transition: 0.2s ease-in-out;
+  @include min-width-1024 {
+    padding: 16px 47px 16px;
+    font-size: 18px;
+  }
+  &:hover {
+    color: $white;
+    background: $blue;
+    border-color: transparent;
+  }
+  @include min-width-1024 {
+    padding: 18px 43px;
+    font-size: 16px;
+    font-weight: 700;
+    /*background: $blue;
+    color: $white;
+    border-color: transparent;*/
+  }
+}
+
+/*.motion__btn-svg {
+  width: 28px;
+  height: 12px;
+  margin-left: 10px;
+  @include min-width-1024 {
+    display: none;
+  }
+}*/
+
+.motion__right {
+  @include min-width-1024 {
+    width: 45%;
+    text-align: center;
+  }
+}
+
+.motion__right-img {
+  display: none;
+  @include min-width-1024 {
+    display: inline-block;
+  }
+}
