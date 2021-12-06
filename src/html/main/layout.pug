@@ -12,6 +12,8 @@ html(lang="ru")
       link(rel="icon" href="img/favicon.ico" type="image/x-icon")
       if swiperCSS
         link(rel="stylesheet" href="css/lib/swiper-bundle.min.css")
+      if AnimateCSS
+        link(rel="stylesheet" href="css/lib/animate.min.css")
       link(rel="stylesheet" href="css/stylesheet.css")
   body(class="" +bodyClass)
     header(class="" +headerClass)
@@ -35,6 +37,14 @@ html(lang="ru")
         script(src="js/lib/lottie.js")
       if lottiePlayerJS
         script(src="js/lib/lottie-player.js")
+      if TweenMaxJS
+        script(src="js/lib/TweenMax.min.js")
+      if ScrollMagicJS
+        script(src="js/lib/ScrollMagic.min.js")
+      if gSapJS
+        script(src="js/lib/animation.gsap.min.js")
+      if WowJS
+        script(src="js/lib/wow.min.js")
       script(src="js/main.min.js")
     include ../blocks/request
     include ../blocks/request-vacancy

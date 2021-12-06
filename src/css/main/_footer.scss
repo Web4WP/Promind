@@ -22,14 +22,14 @@
   @include min-width-768 {
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   @include min-width-1024 {
-    justify-content: space-around;
+
   }
   @include min-width-1280 {
     padding-bottom: 12px;
-    justify-content: space-between;
+
   }
 }
 
@@ -150,10 +150,20 @@
 
 .footer__column-flex {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
   @include min-width-1280 {
-    justify-content: flex-end;
+    padding-left: 35px;
+    /*justify-content: flex-end;*/
+  }
+  @include min-width-custom(1366px) {
+    padding-left: 58px;
+  }
+  @include min-width-custom(1440px) {
+    padding-left: 70px;
+  }
+  @include min-width-custom(1900px) {
+    padding-left: 132px;
   }
 }
 

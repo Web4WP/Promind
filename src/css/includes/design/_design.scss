@@ -78,7 +78,10 @@
 .design__slider {
   margin-bottom: 78px;
   @include min-width-1280 {
-    height: 100vh; /* 820px */
+    height: 700px; /* 100vh */
+  }
+  @include min-width-custom(1900px) {
+    height: 950px;
   }
 }
 

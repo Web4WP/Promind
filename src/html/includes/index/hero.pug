@@ -9,11 +9,14 @@ section.hero
           span Многостраничный
           span Landing Page
           span Интернет-магазин
-        button.hero__btn.btn(data-bs-toggle="modal", data-bs-target="#request") Заказать проект
+        button.hero__btn.btn(data-bs-toggle="modal", data-bs-target="#request")
+          span.hero__btn-text Заказать проект
           svg.hero__btn-svg
             use(xlink:href="img/svg/sprite.svg#button-arrow")
       div.hero__col-right
-        img.hero__img(src="img/picture/hero-tablet.png", alt="ProMind")
+        video.hero__col-right-video(playsinline autoplay muted loop)
+          source(src="files/wd_13.mp4" type="video/mp4")
+        //-img.hero__img(src="img/picture/hero-tablet.png", alt="ProMind")
   div.hero__partners
     div.hero__partners-wrap
       div.hero__partners-item

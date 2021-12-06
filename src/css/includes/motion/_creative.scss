@@ -31,4 +31,10 @@
   font-weight: 700;
   border-radius: 32px;
   border: 1px solid $black;
+  transition: 0.2s;
+  &:hover {
+    color: $white;
+    background: $blue;
+    border-color: transparent;
+  }
 }

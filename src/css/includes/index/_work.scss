@@ -112,27 +112,39 @@
 }
 
 .work__all-link {
+  position: relative;
   padding: 10px 30px;
   font-weight: 500;
   color: #333333;
   border: 1px solid $black;
   border-radius: 40px;
-  transition: 0.2s;
+  @include min-width-1280 {
+    padding: 13px 40px;
+  }
   &:hover {
     color: $white;
     background: $blue;
     border-color: $blue;
-    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.25);
-    .work__all-svg {
-      color: $white;
+    .work__all-link-text {
+      right: -20px;
     }
-  }
-  @include min-width-1280 {
-    padding: 13px 40px;
+    .work__all-svg {
+      right: -80px;
+      opacity: 0;
+      transition: 0.5s;
+    }
   }
 }
 
+.work__all-link-text {
+  position: relative;
+  right: 0;
+  transition: 0.2s;
+}
+
 .work__all-svg {
+  position: relative;
+  right: 0;
   width: 28px;
   height: 12px;
   margin-left: 10px;

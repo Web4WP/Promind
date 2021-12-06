@@ -36,6 +36,11 @@
       text-align: center;
     }
   }
+  @include min-width-custom(1900px) {
+    span {
+      max-width: 80%;
+    }
+  }
 }
 
 .graph__wrap {
@@ -96,6 +101,7 @@
 }
 
 .graph__link {
+  position: relative;
   display: inline-block;
   margin-top: 20px;
   padding: 10px 29px;
@@ -104,18 +110,36 @@
   color: #333333;
   border: 1px solid #333333;
   border-radius: 40px;
+  transition: background 0.2s ease-out, border-color 0.2s ease-out;
   @include min-width-1280 {
     margin-top: 70px;
     padding: 14px 69px;
     font-size: 18px;
   }
+  &:hover {
+    color: $white;
+    background: $blue;
+    border-color: $blue;
+    .graph__link-text {
+      right: -20px;
+    }
+    .graph_link-svg {
+      right: -80px;
+      opacity: 0;
+      transition: 0.5s;
+    }
+  }
 }
 
 .graph__link-text {
-
+  position: relative;
+  right: 0;
+  transition: 0.2s;
 }
 
 .graph_link-svg {
+  position: relative;
+  right: 0;
   width: 28px;
   height: 12px;
   margin-left: 5px;

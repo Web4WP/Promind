@@ -1,6 +1,9 @@
 section.tariffs
   div.container
-    h1.tariffs__title Услуги
+    div.tariffs__title
+      video.video__title-video(playsinline autoplay muted preload="auto" loop="loop" poster="")
+        source(src="files/service-heading.mp4" type="video/mp4")
+      h1.tariffs__title-text Услуги
     div.tariffs__wrap
       div.tariffs__subtitle Категория сайта
       ul#pills-tab.tariffs__list.nav.nav-pills(role="tablist")
@@ -9,7 +12,7 @@ section.tariffs
         li.tariffs__item.nav-item(role="presentation")
           button#pills-profile-tab.tariffs__btn.nav-link(data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false") Интернет-магазин
         li.tariffs__item.nav-item(role="presentation")
-          button#pills-contact-tab.tariffs__btn.nav-link(data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false") многостраничный сайт
+          button#pills-contact-tab.tariffs__btn.nav-link(data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false") Многостраничный сайт
       div#pills-tabContent.tariffs__content.tab-content
         div#pills-home.tariffs__block.tab-pane.fade.show.active(role="tabpanel" aria-labelledby="pills-home-tab")
           div.tariffs__block-title Landing page
@@ -98,6 +101,8 @@ section.tariffs
               span.service-preview__text Оптимизация картинок<br>Интеграция видео
             li.service-preview__item
               span.service-preview__text Адаптивность и тестирование сайта<br>Настройка хостинга<br>Перенос сайта на основной домен
+            li.service-preview__item
+              span.service-preview__text Установка и настройка движка<br>Создание внутренних индивидуальных страниц<br>Адаптивность внутренних страниц
             li.service-preview__item.service-preview__item_added
               span.service-preview__text Функции интернет-магазина<br>Структура страниц интернет магазина<br>Добавление 50 позиций и сопутствующих товаров
 

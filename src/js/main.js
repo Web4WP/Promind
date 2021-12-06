@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+  new WOW().init();
+
   document.querySelector('.header__burger').addEventListener('click', function (e) {
     document.querySelector('.header__menu').classList.add('open');
     document.querySelector('body').classList.add('menu-open');
@@ -125,8 +127,13 @@ document.addEventListener('DOMContentLoaded', function () {
   let imv = new Inputmask("+7 (999) 999-99-99");
   im.mask(maskPhoneVacancy);
 
+  // Добавляем маску для ввода телефона (Форма CTA-блока - inputmask.min.js)
+  let ctaForm = document.querySelector('#userPhoneCta');
+  let imcta = new Inputmask("+7 (999) 999-99-99");
+  imcta.mask(ctaForm);
 
   if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
+
 
     // Эффект печатающегося текста на главной странице (typed.min.js)
     new Typed('.hero__text', {
@@ -236,6 +243,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
   else if (window.location.pathname == '/about.html') {
 
+    new WOW().init();
+
+    /* Анимация появления партнеров */
+
+    let controller = new ScrollMagic.Controller({ globalSceneOptions: {duration: 500}} );
+    $('.about-partner__img').each(function() {
+      let tween = TweenMax.from($(this), 0.3, { transform: 'scale(0)' });
+      let scene = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0.7,
+        offset: -200,
+        reverse: false
+      })
+        .setTween(tween)
+        .addTo(controller);
+    });
+    let tl = new TimelineMax();
+
+    /* Анимация появления инструментов */
+
+    let controllerIn = new ScrollMagic.Controller({ globalSceneOptions: {duration: 500}} );
+    $('.about-instrument__img').each(function() {
+      let tween = TweenMax.from($(this), 0.3, { transform: 'scale(0)' });
+      let scene = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0.7,
+        offset: -200,
+        reverse: false
+      })
+        .setTween(tween)
+        .addTo(controller);
+    });
+    let tlin = new TimelineMax();
+
     /* Включаем / выключаем звук на видео по клику */
     let video = document.querySelector('.about-hero__video');
     video.muted = true;
@@ -333,7 +374,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   else if (window.location.pathname == '/portfolio.html') {
 
-    let mixer = mixitup('.portfolio__wrap');
+    mixitup('.portfolio__wrap', {
+      selectors: {
+        target: '.portfolio__item'
+      },
+      animation: {
+        duration: 500
+      }
+    });
+
+
+
+    //let mixer = mixitup('.portfolio__wrap');
 
   }
 
@@ -374,6 +426,22 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   else if (window.location.pathname == '/design.html') {
+
+    /* Анимация появления партнеров */
+
+    let controllerDes = new ScrollMagic.Controller({ globalSceneOptions: {duration: 500}} );
+    $('.logos-partner__img').each(function() {
+      let tween = TweenMax.from($(this), 0.3, { transform: 'scale(0)' });
+      let scene = new ScrollMagic.Scene({
+        triggerElement: this,
+        triggerHook: 0.7,
+        offset: -200,
+        reverse: false
+      })
+        .setTween(tween)
+        .addTo(controllerDes);
+    });
+    let tlDes = new TimelineMax();
 
     new Swiper('.design__slider', {
       loop: true,
@@ -496,13 +564,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 
-  else if (window.location.pathname !== '/vacancy.html' && window.location.pathname !== '/dev.html' && window.location.pathname !== '/project.html' && window.location.pathname !== '/privacy.html') {
+
+  else if (window.location.pathname !== '/vacancy.html' || window.location.pathname !== '/dev.html' || window.location.pathname !== '/project.html' || window.location.pathname !== '/privacy.html') {
 
     // Добавляем маску для ввода телефона (Форма CTA-блока - inputmask.min.js)
-    let ctaForm = document.querySelector('#userPhoneCta');
+    /*let ctaForm = document.querySelector('#userPhoneCta');
     let imcta = new Inputmask("+7 (999) 999-99-99");
-    imcta.mask(ctaForm);
+    imcta.mask(ctaForm);*/
 
   }
+
+
+
 
 })

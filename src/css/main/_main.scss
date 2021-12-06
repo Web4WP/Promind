@@ -67,6 +67,7 @@ button {
   border: none;
   outline: none;
   -webkit-appearance: none;
+  appearance: none;
   &:hover {
     cursor: pointer;
   }
@@ -143,10 +144,10 @@ img {
     font-size: 50px;
   }
   @include min-width-768 {
-    font-size: 60px;
+    font-size: 70px;
   }
   @include min-width-1024 {
-    font-size: 70px;
+    font-size: 80px;
   }
   @include min-width-1280 {
     font-size: 115px;

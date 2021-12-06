@@ -67,6 +67,7 @@
 }
 
 .copy__link {
+  position: relative;
   display: inline-block;
   margin-top: 20px;
   padding: 10px 29px;
@@ -80,13 +81,30 @@
     padding: 14px 46px;
     font-size: 18px;
   }
+  &:hover {
+    color: $white;
+    background: $blue;
+    border-color: $blue;
+    .copy__link-text {
+      right: -20px;
+    }
+    .copy_link-svg {
+      right: -80px;
+      opacity: 0;
+      transition: 0.5s;
+    }
+  }
 }
 
 .copy__link-text {
-
+  position: relative;
+  right: 0;
+  transition: 0.2s;
 }
 
 .copy_link-svg {
+  position: relative;
+  right: 0;
   width: 28px;
   height: 12px;
   margin-left: 5px;

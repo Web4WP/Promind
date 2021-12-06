@@ -72,6 +72,7 @@
 }
 
 .motion-serv__link {
+  position: relative;
   display: inline-block;
   margin-top: 20px;
   padding: 10px 29px;
@@ -85,13 +86,30 @@
     padding: 14px 69px;
     font-size: 18px;
   }
+  &:hover {
+    color: $white;
+    background: $blue;
+    border-color: $blue;
+    .motion-serv__link-text {
+      right: -20px;
+    }
+    .motion-serv__link-svg {
+      right: -80px;
+      opacity: 0;
+      transition: 0.5s;
+    }
+  }
 }
 
 .motion-serv__link-text {
-
+  position: relative;
+  right: 0;
+  transition: 0.2s;
 }
 
 .motion-serv__link-svg {
+  position: relative;
+  right: 0;
   width: 28px;
   height: 12px;
   margin-left: 5px;

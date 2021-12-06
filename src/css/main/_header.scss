@@ -194,12 +194,31 @@
 
 .header__dropdown-img {
   position: absolute;
+  display: inline-flex;
   top: 0;
   left: 0;
   opacity: 0;
   visibility: hidden;
   transition: 0.2s;
+  overflow: hidden;
+  div {
+    font-size: 150px;
+    color: $white;
+    text-shadow: 1px 0 0 #000000, 0 1px 0 #000000, -1px 0 0 #000000, 0 -1px 0 #000000;
+    overflow: hidden;
+    z-index: 100;
+    mix-blend-mode: screen;
+  }
+  video {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 99%;
+    height: 98%;
+    object-fit: cover;
+  }
 }
+
 
 .header__dropdown-img.show {
   opacity: 1;
@@ -319,7 +338,7 @@
 .header__menu-block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   height: calc(100vh - 60px);
 }
 
