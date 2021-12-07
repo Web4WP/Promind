@@ -1,0 +1,48 @@
+extends ../main/layout
+
+block variables
+  - let title = "Портфолио (Кейс) - ProMind"
+  - let bodyClass = "internal-page"
+  - let headerClass = "header"
+  - let footerClass = "footer"
+  - let AnimateCSS = true;
+  - let WowJS = true;
+
+block main
+  main
+    div.container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная
+        li.breadcrumbs__separator /
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="portfolio.html") Портфолио
+        li.breadcrumbs__separator /
+        li.breadcrumbs__item Lalga
+    section.internal
+      video.internal__video(playsinline autoplay muted loop)
+        source(src="files/lalga-p.mp4" type="video/mp4")
+      //img.internal-hero__img(src="img/picture/internal/ilco-1.jpg", alt="")
+      div.container
+        div.internal__wrap
+          div.internal__left
+            h1.internal__title Ilco
+            div.internal__text Компания IL-CO Групп — надежный партнер для всех, кому требуется квалифицированная и оперативная помощь. www.il-co.ru
+          div.internal__right
+            img.internal__right-img(src="img/picture/internal/ilco-logo.png", alt="")
+      div.internal__fluid
+        img.internal__fluid-img(src="img/picture/internal/ilco-2.jpg", alt="")
+      div.internal__fonts
+        div.container
+          div.internal__fonts-wrap
+            div.internal__fonts-left
+              div.internal__fonts-title Typography
+              div.internal__fonts-name Montserrat
+              div.internal__fonts-text Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+            div.internal__fonts-right
+              div.internal__fonts-right-title Colors
+              img.internal__fonts-right-img(src="img/picture/internal/ilco-colors.png", alt="")
+      div.internal__last
+        img.internal__last-img(src="img/picture/internal/ilco-3.jpg", alt="")
+    include ../blocks/cta
+
