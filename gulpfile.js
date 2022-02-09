@@ -57,7 +57,7 @@ function css() {
     .pipe(sourcemap.init())
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(autoprefixer({ cascade: false }))
-    .pipe(cleanCSS({ sourceMap: true, level: { 2: { all: true } } } ))
+    .pipe(cleanCSS({ level: { 2: { mergeMedia: true, } } } ))
     .pipe(combCSS())
     .pipe(sourcemap.write())
     .pipe(dest('build/css'))

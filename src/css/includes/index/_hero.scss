@@ -18,7 +18,7 @@
     text-align: left;
   }
   @include min-width-1280 {
-    margin-bottom: 55px;
+    margin-bottom: 0; /* 55px */
   }
 }
 
@@ -168,6 +168,7 @@
   }
   @include min-width-1280 {
     width: 52.9%;
+    margin-top: -50px;
   }
 }
 
@@ -176,18 +177,22 @@
 }
 
 .hero__img, .hero__col-right-video {
-  max-width: 277px;
+  max-width: 100%; /* 277px */
   @include min-width-768 {
-    max-width: 400px;
-  }
-  @include min-width-1024 {
-    max-width: 420px;
-  }
-  @include min-width-1280 {
     max-width: 500px;
   }
+  @include min-width-1024 {
+    max-width: 100%;
+    /*max-width: 420px;*/
+  }
+  @include min-width-1280 {
+    /*max-width: 500px;*/
+  }
   @include min-width-custom(1440px) {
-    max-width: 650px;
+    /*max-width: 650px;*/
+  }
+  @include min-width-custom(1900px) {
+    /*max-width: 100%;*/
   }
 }
 
@@ -209,6 +214,9 @@
   margin-right: 25px;
   @include min-width-1024 {
     width: 15%;
+  }
+  @include min-width-1280 {
+    width: 10%;
   }
 }
 

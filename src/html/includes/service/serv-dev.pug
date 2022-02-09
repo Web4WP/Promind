@@ -1,4 +1,4 @@
-section.serv-dev
+section#serv-dev.serv-dev
   div.container
     h2.serv-dev__title.wow.animate__animated.animate__fadeIn(data-wow-duration="2s") Web <span>разработка</span>
     div.serv-dev__wrap
@@ -8,7 +8,7 @@ section.serv-dev
         div.serv-dev__right-title.wow.animate__animated.animate__fadeInUp(data-wow-duration="1s" data-wow-delay="0.1s") <span>Проектирование и разработка</span> сайта – основа правильной работы web-ресурса.
         p.serv-dev__text.wow.animate__animated.animate__fadeInUp(data-wow-duration="1s" data-wow-delay="0.2s") Наши программисты профессионально подойдут к вопросу web-разработки, учтут основные цели создания сайта и выпустят ресурс любого типа и уровня сложности – от визитки до портала.
         p.serv-dev__text.wow.animate__animated.animate__fadeInUp(data-wow-duration="1s" data-wow-delay="0.3s") Залог успеха – комплексный подход, который включает несколько этапов разработки: проект структуры, создание прототипа сайта, его адаптивного дизайна и мобильной версии.
-        a.serv-dev__link(href="portfolio.html")
-          span.serv-dev__link-text Заказать разработку
+        button.serv-dev__link
+          span.serv-dev__link-text(data-bs-toggle="modal", data-bs-target="#request") Заказать разработку
           svg.serv-dev__link-svg
             use(xlink:href="img/svg/sprite.svg#button-arrow")

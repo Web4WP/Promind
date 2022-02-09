@@ -1,5 +1,53 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+  let myHash = location.hash;
+  location.hash = '';
+  if(myHash[1] != undefined){
+    $('html, body').animate({ scrollTop: $(myHash).offset().top }, 600);
+  };
+
+  if ($(window).width() < 1280) {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('header').addClass('opacity');
+      } else {
+        $('header').removeClass('opacity');
+      }
+    });
+  }
+
+  new Typed('.header__dropdown-hidden_web-code', {
+    strings: [
+      '<div class="code__line">'
+      +'	<span class="code__color_blue">var</span> view = <span class="code__color_orange">UILabel</span>()'
+      +'	<br>view.frame = <span class="code__color_orange">CGRect</span>(x: <span class="code__color_orange">0</span>, y: <span class="code__color_orange">0</span>, width: <span class="code__color_orange">745</span>, height: <span class="code__color_orange">518</span>)'
+      +'	<br>view.backgroundColor = .white'
+      +'</div>'
+      +'<div class="code__line">'
+      +'	let image0 = <span class="code__color_orange">UIImage</span>(named: <span class="code__color_green">"25332.jpg"</span>)?.cgImage'
+      +'	<br>let layer0 = <span class="code__color_orange">CALayer</span>()'
+      +'	<br>layer0.contents = image0'
+      +'	<br>layer0.transform = <span class="code__color_orange">CATransform3DMakeAffineTransform(CGAffineTransform</span>(a: <span class="code__color_orange">1</span>, b: <span class="code__color_orange">0</span>, <span class="code__color_orange">C</span>: <span class="code__color_orange">0</span>, d: <span class="code__color_orange">0.96</span>, tx: <span class="code__color_orange">0</span>, <br>ty: <span class="code__color_orange">0.02</span>))'
+      +'	<br>layer0.bound = view.bounds'
+      +'	<br>layer0.position = view.center'
+      +'	<br>view.layer.addSublayer(layer0)'
+      +'</div>'
+      +'<div class="code__line">'
+      +'	<span class="code__color_blue">var</span> parent = <span class="code__color_blue">self</span>.view!'
+      +'	<br>parent.addSubview(view)'
+      +'	<br>view.translatesAutoresizingMaskIntoConstraints = <span class="code__color_orange">false</span>'
+      +'	<br>view.widthAnchor.constraint(equalToConstant: <span class="code__color_orange">745</span>).isActive = <span class="code__color_orange">true</span>'
+      +'	<br>view.heightAnchor.constraint(equalToConstant: <span class="code__color_orange">518</span>).isActive = <span class="code__color_orange">true</span>'
+      +'</div>'
+    ],
+    typeSpeed: 0,
+    backSpeed: 20,
+    backDelay: 200,
+    showCursor: false,
+    fadeOut: true,
+    loop: true,
+  });
+
   new WOW().init();
 
   document.querySelector('.header__burger').addEventListener('click', function (e) {
@@ -78,19 +126,19 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   document.querySelector('.header__dropdown-item_motion').addEventListener('mouseover', function (e) {
-    document.querySelector('.header__dropdown-img_motion').classList.add('show');
+    document.querySelector('.header__dropdown-hidden_motion').classList.add('show');
   })
 
   document.querySelector('.header__dropdown-item_motion').addEventListener('mouseout', function (e) {
-    document.querySelector('.header__dropdown-img_motion').classList.remove('show');
+    document.querySelector('.header__dropdown-hidden_motion').classList.remove('show');
   })
 
   document.querySelector('.header__dropdown-item_web').addEventListener('mouseover', function (e) {
-    document.querySelector('.header__dropdown-img_web').classList.add('show');
+    document.querySelector('.header__dropdown-hidden_web').classList.add('show');
   })
 
   document.querySelector('.header__dropdown-item_web').addEventListener('mouseout', function (e) {
-    document.querySelector('.header__dropdown-img_web').classList.remove('show');
+    document.querySelector('.header__dropdown-hidden_web').classList.remove('show');
   })
 
   document.querySelector('.header__dropdown-item_support').addEventListener('mouseover', function (e) {
@@ -102,11 +150,11 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   document.querySelector('.header__dropdown-item_seo').addEventListener('mouseover', function (e) {
-    document.querySelector('.header__dropdown-img_seo').classList.add('show');
+    document.querySelector('.header__dropdown-hidden_seo').classList.add('show');
   })
 
   document.querySelector('.header__dropdown-item_seo').addEventListener('mouseout', function (e) {
-    document.querySelector('.header__dropdown-img_seo').classList.remove('show');
+    document.querySelector('.header__dropdown-hidden_seo').classList.remove('show');
   })
 
   document.querySelector('.header__dropdown-item_copy').addEventListener('mouseover', function (e) {
@@ -132,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let imcta = new Inputmask("+7 (999) 999-99-99");
   imcta.mask(ctaForm);
 
-  if (window.location.pathname == '/' || window.location.pathname == '/index.html') {
+  if (window.location.pathname == '/pro' || window.location.pathname == '/pro/index.html') {
 
 
     // Эффект печатающегося текста на главной странице (typed.min.js)
@@ -557,7 +605,7 @@ document.addEventListener('DOMContentLoaded', function () {
       backDelay: 200,
       showCursor: false,
       fadeOut: true,
-      loop: false,
+      loop: true,
     });
 
 
